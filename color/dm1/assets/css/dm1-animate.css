@@ -1,0 +1,133 @@
+/* File:   dm1-animate.css               Spring 2013
+ * Author: Patrick E. Vargas                (patrick.vargas@colorado.edu)
+ * Description: 
+ *   Animation definitions.
+ */
+
+.mountains-lg {  
+  -webkit-animation: drift 25s infinite linear;
+  -moz-animation:    drift 25s infinite linear;
+  -o-animation:      drift 25s infinite linear;
+  animation:         drift 25s infinite linear;
+}
+
+.mountains-md {
+  -webkit-animation: drift 20s infinite linear;
+  -moz-animation:    drift 20s infinite linear;
+  -o-animation:      drift 20s infinite linear;
+  animation:         drift 20s infinite linear;
+}
+
+.mountains-sm {
+  -webkit-animation: drift 15s infinite linear;
+  -moz-animation:    drift 15s infinite linear;
+  -o-animation:      drift 15s infinite linear;
+  animation:         drift 15s infinite linear;
+}
+
+.clouds-md {
+  -webkit-animation: drift 10s infinite linear;
+  -moz-animation:    drift 10s infinite linear;
+  -o-animation:      drift 10s infinite linear;
+  animation:         drift 10s infinite linear;
+}
+
+.clouds-sm {
+  -webkit-animation: drift 5s infinite linear;
+  -moz-animation:    drift 5s infinite linear;
+  -o-animation:      drift 5s infinite linear;
+  animation:         drift 5s infinite linear;
+}
+
+.penguin {
+  -webkit-animation: penguin 20s infinite linear, turbulance 2s infinite linear;
+  -moz-animation:    penguin 20s infinite linear, turbulance 2s infinite linear;
+  -o-animation:      penguin 20s infinite linear, turbulance 2s infinite linear;
+  animation:         penguin 20s infinite linear, turbulance 2s infinite linear;
+}
+
+.reverse { 
+  -webkit-animation-direction: reverse;
+  -mox-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.reverse-img { background-image: url('../img/dm1-penguin-reverse.png'); }
+
+@-webkit-keyframes drift {
+  from { background-position: 250px 0px; }
+    to { background-position: -250px 0px; }
+}
+@-moz-keyframes drift {
+  from { background-position: 250px 0px; }
+    to { background-position: -250px 0px; }
+}
+@-o-keyframes drift {
+  from { background-position: 250px 0px; }
+    to { background-position: -250px 0px; }
+}
+@keyframes drift {
+  from { background-position: 250px 0px; }
+    to { background-position: -250px 0px; }
+}
+
+@-webkit-keyframes penguin {
+  from { left: -10%; }
+    to { left: 100%; }
+}
+@-moz-keyframes penguin {
+  from { left: -10%; }
+    to { left: 100%; }
+}
+@-o-keyframes penguin {
+  from { left: -10%; }
+    to { left: 100%; }
+}
+@keyframes penguin {
+  from { left: -10%; }
+    to { left: 100%; }
+}
+
+@-webkit-keyframes turbulance {
+  0%   { top: 60px; }
+  25%  { -webkit-transform: rotate(20deg);}
+  50%  { top: 110px; }
+  75%  { -webkit-transform: rotate(-20deg);}
+  100% { top: 60px; }
+}
+@-moz-keyframes turbulance {
+  0%   { top: 60px; }
+  25%  { -moz-transform: rotate(20deg);}
+  50%  { top: 110px; }
+  75%  { -moz-transform: rotate(-20deg);}
+  100% { top: 60px; }
+}
+@-o-keyframes turbulance {
+  0%   { top: 60px; }
+  25%  { -o-transform: rotate(20deg);}
+  50%  { top: 110px; }
+  75%  { -o-transform: rotate(-20deg);}
+  100% { top: 60px; }
+}
+@keyframes turbulance {
+  0%   { top: 60px; }
+  25%  { transform: rotate(20deg);}
+  50%  { top: 110px; }
+  75%  { transform: rotate(-20deg);}
+  100% { top: 60px; }
+}
+
+@-webkit-keyframes progress {
+  from { background-position: 0 -250px; }
+  to   { background-position: -250px 0; }
+}
+@-moz-keyframes progress {
+  from { background-position: 0 -250px; }
+  to   { background-position: -250px 0; }
+}
+@keyframes progress {
+  from { background-position: 0 -250px; }
+  to   { background-position: -250px 0; }
+}
+

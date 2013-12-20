@@ -1,0 +1,21 @@
+ErrorDocument 404 /error/404.html
+
+
+
+
+# Hotlink Protection BEGIN
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http://vargascorpus.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.vargascorpus.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://vargascorpuscom.ipage.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.vargascorpuscom.ipage.com/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://vargascorpus.net/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.vargascorpus.net/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://vargascorpus.org/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.vargascorpus.org/.*$ [NC]
+RewriteRule .(gif|jpg|png|css|js)$ - [F]
+# Hotlink Protection END
+# Rewrite to www. BEGIN 
+RewriteCond %{HTTP_HOST} ^vargascorpus\.com$ [NC]
+RewriteRule ^(.*)$ http://www.vargascorpus.com/$1 [L,R=301]
+# Rewrite to www. END

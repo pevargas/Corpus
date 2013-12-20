@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- <?xml-stylesheet type="text/xsl" href="res/courses.xsl"?> -->
+<!--XML Database for Patrick E Vargas-->
+
+<catalog>
+	
+	<!-- Semester 01 -->
+	
+	<course>
+		<title>Campus Orchestra</title>
+		<cat>EMUS 1517</cat>
+		<type>mus</type>
+		<pro>false</pro>
+		<sem>01</sem>
+		<description>
+			Offers university string, wind and percussion performers not majoring in music an opportunity to play in a conducted orchestra.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Calculus I</title>
+		<cat>MATH 1300</cat>
+		<type>mat</type>
+		<pro>false</pro>
+		<sem>01</sem>
+		<description>
+			Topics include limits, derivatives of algebraic and trigonometric functions, applications of the derivative, integration and application of the definite integral.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Semester I Theory</title>
+		<cat>MUSC 1101</cat>
+		<type>mus</type>
+		<pro>false</pro>
+		<sem>01</sem>
+		<description>
+			Introduces the fundamentals of diatonic harmony and voice leading, focusing on four-voice writing and analysis of excerpts from music literature.*
+		</description>
+	</course>
+	
+    <course>
+		<title>Aural Skills Lab, Semester I</title>
+		<cat>MUSC 1121</cat>
+		<type>mus</type>
+		<pro>false</pro>
+		<sem>01</sem>
+		<description>
+			Focuses on sight singing, rhythm, and dictation of diatonic melodies in major and minor keys (treble, alto, and bass clefs). Covers identification of scale types, intervals, triads, and dominant seventh chords. Studies harmonic dictation using chords from MUSC 1101.*
+		</description>
+	</course>	
+	
+	<course>
+		<title>Introduction to Musical Styles and Ideas</title>
+		<cat>MUSC 1802</cat>
+		<type>mus</type>
+		<pro>false</pro>
+		<sem>01</sem>
+		<description>
+			Introduces the study of music including bibliographic, listening, score reading, critical reading, and writing skills; music terminology; a survey of selected music genres (symphonic and chamber music); and building of general music repertory.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Keyboard Musicianship I</title>
+		<cat>PMUS 1105</cat>
+		<type>mus</type>
+		<pro>false</pro>
+		<sem>01</sem>
+		<description>
+			Introduces the keyboard, music reading in the treble and bass clefs, basic theory and keyboard harmony, technical patterns, and improvisation. Studies easy classical and pop repertoire.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Composition Seminar</title>
+		<cat>PMUS 1526</cat>
+		<type>mus</type>
+		<pro>false</pro>
+		<sem>01</sem>
+		<description>
+			Discussed composing as a career and tips and tricks of music composition. Included private instruction from composing faculty.
+		</description>
+	</course>
+	
+	<course>
+		<title>Double Bass Seminar</title>
+		<cat>PMUS 1656</cat>
+		<type>mus</type>
+		<pro>false</pro>
+		<sem>01</sem>
+		<description>
+			Discussed the art of playing the double bass. Included private instruction from Double Bass professor.
+		</description>
+	</course>
+	
+	
+	<!-- Semester 02 -->
+	
+
+	<course>
+		<title>Weather and the Atmosphere</title>
+		<cat>ATOC 1050</cat>
+		<type>atoc</type>
+		<pro>false</pro>
+		<sem>02</sem>
+		<description>
+		  Introduces principles of modern meteorology for non-science majors, with emphasis on scientific and human issues associated with severe weather events. Includes description, methods of prediction, and impacts of blizzards, hurricanes, thunderstorms, tornadoes, lightning, floods, and firestorms.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Beginning French I</title>
+		<cat>FREN 1010</cat>
+		<type>hum</type>
+		<pro>false</pro>
+		<sem>02</sem>
+		<description>
+			For students with no previous knowledge of French. Presents basic grammar and most commonly used French vocabulary. Introduces students to Francophone culture.*
+		</description>
+	</course>
+
+	<course>
+		<title>Calculus II</title>
+		<cat>MATH 2300</cat>
+		<type>mat</type>
+		<pro>false</pro>
+		<sem>02</sem>
+		<description>
+			Continuation of MATH 1300. Topics include transcendental functions, methods of integration, polar coordinates, conic sections, improper integrals, and infinite series.*
+		</description>
+	</course>
+	
+	<course>
+		<title>General Physics I</title>
+		<cat>PHYS 1110</cat>
+		<type>mat</type>
+		<pro>false</pro>
+		<sem>02</sem>
+		<description>
+			Covers kinematics, dynamics, momentum of particles and rigid bodies, work and energy, gravitation, simple harmonic motion, and introduction to thermodynamics.*
+		</description>
+	</course>
+	
+	
+	<!-- Semester 03 -->
+	
+	
+	<course>
+		<title>Our Changing Environment: El Ni&#241;o, Ozone, and Climate</title>
+		<cat>ATOC 1060</cat>
+		<type>atoc</type>
+		<pro>false</pro>
+		<sem>03</sem>
+		<description>
+		  Discusses the Earth's climate for non-science majors, focusing on the role of the atmosphere, oceans, and land surface. Describes the water cycle, atmospheric circulations, and ocean currents, and how they influence global climate, El Nino, and the ozone hole. Discusses human impacts from climate change.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Beginning French II</title>
+		<cat>FREN 1050</cat>
+		<type>hum</type>
+		<pro>false</pro>
+		<sem>03</sem>
+		<description>
+			Continuation of FREN 1010. Completes the presentation of most basic structures and French vocabulary.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Calculus III</title>
+		<cat>MATH 2400</cat>
+		<type>mat</type>
+		<pro>false</pro>
+		<sem>03</sem>
+		<description>
+		  Continuation of MATH 2300. Topics include vectors, three-dimensional analytic geometry, partial differentiation and multiple integrals, and vector analysis.*
+		</description>
+	</course>
+	
+	<course>
+		<title>General Physics II</title>
+		<cat>PHYS 1120</cat>
+		<type>mat</type>
+		<pro>false</pro>
+		<sem>03</sem>
+		<description>
+			Covers electricity and magnetism, wave motion, and optics.*
+		</description>
+	</course>
+	
+	
+	<!-- Semester 04 -->
+	
+	
+	<course>
+		<title>Computer Science I: Programming</title>
+		<cat>CSCI 1300</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>04</sem>
+		<description>
+			Teaches techniques for writing computer programs in higher level programming languages to solve problems of interest in a range of application domains.* Taught using C++.
+		</description>
+	</course>
+	
+	<course>
+		<title>Language in U.S. Society</title>
+		<cat>LING 1000</cat>
+		<type>hum</type>
+		<pro>false</pro>
+		<sem>04</sem>
+		<description>
+			Nontechnical exploration of the ways that language is used in America. Emphasizes language as a social institution and how values and goals of both public institutions and private groups shape and are shaped by language and its use.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Introduction to Western Philosophy: Modern</title>
+		<cat>PHIL 1020</cat>
+		<type>hum</type>
+		<pro>false</pro>
+		<sem>04</sem>
+		<description>
+			Introduces several philosophical texts and doctrines of 17th and 18th century Europe. Gives special attention to the connection between philosophical ideas and the wider historical milieu--social, political, and literary.*
+		</description>
+	</course>
+	
+	<course>
+		<title>First-Year Writing and Rhetoric</title>
+		<cat>WRTG 1150</cat>
+		<type>hum</type>
+		<pro>false</pro>
+		<sem>04</sem>
+		<description>
+			Rhetorically informed introduction to college writing. Focuses on critical analysis, argument, inquiry, and information literacy. Taught as a writing workshop, the course places a premium on invention, drafting, and thoughtful revision.*
+		</description>
+	</course>
+	
+	
+	<!-- Semester 05 -->
+	
+	
+	<course>
+		<title>Computer Science II: Data Structures</title>
+		<cat>CSCI 2270</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>05</sem>
+		<description>
+			Studies data abstractions (e.g., stacks, queues, lists, trees) and their representation techniques (e.g., linking, arrays). Introduces concepts used in algorithm design and analysis including criteria for selecting data structures to fit their applications.* Taught using C++.
+		</description>
+	</course>
+	
+	<course>
+		<title>Introduction to Probability and Statistics</title>
+		<cat>MATH 3510</cat>
+		<type>mat</type>
+		<pro>false</pro>
+		<sem>05</sem>
+		<description>
+		  	Introduces the basic notions of probability: random variables, expectation, conditioning, and the standard distributions (binomial, Poisson, exponential, normal). This course also covers the Law of Large Numbers and Central Limit Theorem as they apply to statistical questions: sampling from a random distribution, estimation, and hypothesis testing.*
+		</description>
+	</course>
+	
+	
+	<!-- Semester 06 -->
+	
+	
+	<course>
+		<title>Computer Systems</title>
+		<cat>CSCI 2400</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>06</sem>
+		<description>
+			Covers how programs are represented and executed by modern computers, including low-level machine representations of programs and data, an understanding of how computer components influence performance and memory hierarchy.* Topics include: x86 Architecture, Memory Management and Shell Development. Taught using C.
+		</description>
+	</course>
+	
+	<course>
+		<title>Discrete Structures</title>
+		<cat>CSCI 2824</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>06</sem>
+		<description>
+			Covers foundational materials for computer science that are often assumed in advanced courses. Topics include set theory, Boolean algebra, functions and relations, graphs, propositional and predicate calculus, proofs, mathematical induction, recurrence relations, combinatorics, discrete probability. Focuses on examples based on diverse applications of computer science.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Human Centered Computing and Professional Development</title>
+		<cat>CSCI 3112</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>06</sem>
+		<description>
+			Supports students in developing professional skills and practices in human computer interaction, design of interactive systems, computer supported cooperative work, computer supported collaborative learning, educational technology, tools that support creativity, user-developed knowledge collections, and gaming.* Topics researched included: Ruby, Ruby on Rails, HTML5 and CSS3.
+		</description>
+	</course>
+	
+	<course>
+		<title>Introduction to Linear Algebra</title>
+		<cat>MATH 3130</cat>
+		<type>mat</type>
+		<pro>false</pro>
+		<sem>06</sem>
+		<description>
+			Examines basic properties of systems of linear equations, vector spaces, linear independence, dimension, linear transformations, matrices, determinants, eigenvalues, and eigenvectors.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Environment and Society</title>
+		<cat>SOCY 2077</cat>
+		<type>hum</type>
+		<pro>false</pro>
+		<sem>06</sem>
+		<description>
+			Examines how both natural and built environments influence human behavior and social organization. Focuses on micro-environments and their influence on individuals; the impact of macro-environments on societal organization; and environmental movements.*
+		</description>
+	</course>
+	
+	
+	<!-- Semester 07 -->
+	
+	
+	<course>
+		<title>Algorithms</title>
+		<cat>CSCI 3104</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>07</sem>
+		<description>
+			Covers advanced data structures, computational geometry, cryptography, dynamic programming, greedy algorithms, divide-and-conquer, graph algorithms (e.g., depth-first search), network algorithms (e.g., shortest paths), approximation algorithms.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Principles of Programming Languages</title>
+		<cat>CSCI 3155</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>07</sem>
+		<description>
+			Study fundamental concepts on which programming of languages are based, and execution models supporting them. Topics include values, variables, bindings, type systems, control structures, exceptions, concurrency, and modularity. Learn how to select a language and to adapt to a new language.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Operating Systems</title>
+		<cat>CSCI 3753</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>07</sem>
+		<description>
+			Examines software comprising computing systems as it builds upon hardware to provide a programming environment. Looks at structure and function of editors, compilers / assemblers, linkers, etc. Basic operating systems concepts and systems programming in high-level languages.* Taught using C and Linux (Ubuntu).
+		</description>
+	</course>
+	
+	<course>
+		<title>Gamelet Design for Education</title>
+		<cat>CSCI 4830</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>07</sem>
+		<description>
+			Using the software AgentCubes, game design principles were learned and implemented to create meaningful educational games.
+		</description>
+	</course>
+	
+	
+	<!-- Semester 08 -->
+	
+	
+	<course>
+		<title>Computer Graphics</title>
+		<cat>CSCI 4229</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>08</sem>
+		<description>
+		  Studies design, analysis, and implementation of computer graphics techniques. Topics include interactive techniques, 2D and 3D viewing, clipping, segmentation, translation, rotation, and projection. Also involves removal of hidden edges, shading, and color.* Taught using C, C++ and OpenGL 2.0.
+		</description>
+	</course>
+	
+	<course>
+		<title>Shakespeare for Nonmajors</title>
+		<cat>ENGL 3000</cat>
+		<type>hum</type>
+		<pro>false</pro>
+		<sem>08</sem>
+		<description>
+		  Introduces students to Shakespeare's major works: the histories, comedies, and tragedies. May include the nondramatic poetry as well.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Introduction to Linguistics</title>
+		<cat>LING 2000</cat>
+		<type>hum</type>
+		<pro>false</pro>
+		<sem>08</sem>
+		<description>
+			Introduces the study of languages as structural systems. Principles of sound patterns, word formation, meaning, and sentence structure. Gives attention to language acquisition, psycholinguistics, language families, dialects, historical change in languages, and different language types.*
+		</description>
+	</course>
+	
+	
+	<!-- Semester 09 -->
+	
+	<course>
+		<title>The Meaning of Information Technology</title>
+		<cat>ATLS 2000</cat>
+		<type>tam</type>
+		<pro>false</pro>
+		<sem>09</sem>
+		<description>
+			Surveys the history of information technologies and modern techniques of information production, storage, transmission, and retrieval. Equips students with an understanding of technological transformations in interpersonal, organizational, and mass communication. Emphasis is on the technological, social and political changes that underlie the movement toward a digital society.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Software Engineering Methods and Tools</title>
+		<cat>CSCI 3308</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>09</sem>
+		<description>
+			Focuses on software engineering methods and tools for application development, including design and system organization; using and creating reusable libraries; building, testing, and debugging; and performance evaluation.* Taught using Java.
+		</description>
+	</course>
+	
+	<course>
+		<title>Principles of Climate</title>
+		<cat>ATOC 3600</cat>
+		<type>atoc</type>
+		<pro>false</pro>
+		<sem>09</sem>
+		<description>
+			Describes the basic components of the climate system: the atmosphere, ocean, cryosphere, and lithosphere. Investigates the basic physical processes that determine climate and link the components of the climate system. Covers the hydrological cycle and its role in climate, climate stability, and global change. Includes forecasting climate and its application and human dimensions.*
+		</description>
+	</course>
+	
+	<course>
+		<title>User-Centered Design</title>
+		<cat>CSCI 4839</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>09</sem>
+		<description>
+			Develops the skills and practices necessary to apply user-centered approaches to software requirements analysis, and the design and evaluation of computer applications.*
+		</description>
+	</course>
+	
+	<course>
+		<title>Technical Communication and Design</title>
+		<cat>WRTG 3035</cat>
+		<type>hum</type>
+		<pro>false</pro>
+		<sem>09</sem>
+		<description>
+			Rhetorically informed introduction to technical writing that hones communication skills in the context of technical design activities. Treats design as a collaborative, user-oriented, problem-based activity, and technical communication as a rhetorically informed and persuasive design art. Taught as a writing workshop emphasizing critical thinking, revision, and oral presentation skills. Focuses on client-driven design projects and effective communication with multiple stakeholders.*
+		</description>
+	</course>
+
+	
+	<!-- Semester 10 -->
+	
+	<course>
+		<title>History of Jazz</title>
+		<cat>MUEL 3642</cat>
+		<type>mus</type>
+		<pro>false</pro>
+		<sem>10</sem>
+		<description>
+			Studies the distinctly American art form of jazz music from its origins to the present, including the various traditions, practices, historical events, and people most important to its evolution.*
+		</description>
+	</course>
+
+	<course>
+		<title>Analysis of Climate and Weather Observations</title>
+		<cat>ATOC 3300</cat>
+		<type>atoc</type>
+		<pro>false</pro>
+		<sem>10</sem>
+		<description>
+			Discusses instruments, techniques, and statistical methods used in atmospheric observations. Covers issues of data accuracy and analysis of weather maps. Provides application to temperature and precipitation records, weather forecasting, and climate change trends. Uses computers to access data sets and process data.*
+		</description>
+	</course>
+
+	<course>
+		<title>Digital Media I</title>
+		<cat>ATLS 3010</cat>
+		<type>tam</type>
+		<pro>false</pro>
+		<sem>10</sem>
+		<description>
+			Introduces techniques, software, and related concepts of digital design and image making through individual and group projects. Emphasizes digital animation, digital audio, digital video and website design and development as a means to formal and expressive ends. Introduces students to critical readings and theories related to digital media practice.*
+		</description>
+	</course>
+
+	<course>
+		<title>Human-Centered Computing Foundation</title>
+		<cat>CSCI 3002</cat>
+		<type>cs</type>
+		<pro>false</pro>
+		<sem>10</sem>
+		<description>
+			Introduces practice and research in human-computer interaction, design of interactive systems, computer supported cooperative work, computer supported collaborative learning, educational technology, tools that support creativity, user-developed knowledge collections, and gaming.*
+		</description>
+	</course>
+
+	<course>
+		<title>Computer Game Development for the XBOX 360</title>
+		<cat>ATLS 4519</cat>
+		<type>tam</type>
+		<pro>false</pro>
+		<sem>10</sem>
+		<description>
+			Game development involves a rich set of interrelated fields including computer science, graphics design, physics, music, and narrative. This course seeks to introduce the fundamental principles of computer game development. Students will use C# and the Microsoft XNA Game Development Framework to develop 2D and 3D games.*
+		</description>
+	</course>
+
+	
+	<!-- Semester 11 -->
+	
+
+	<course>
+		<title>Digital Media II</title>
+		<cat>ATLS 3020</cat>
+		<type>tam</type>
+		<pro>true</pro>
+		<sem>11</sem>
+		<description>
+			A continuation of Digital Media I (ATLS 3010), this course introduces students to advanced digital media development including interactive programming, scripting, and database functionality. Emphasizes a historical and conceptual understanding of programming and computational theories. *
+		</description>
+	</course>
+
+	<course>
+		<title>Databases and Information Systems</title>
+		<cat>CSCI 3287</cat>
+		<type>cs</type>
+		<pro>true</pro>
+		<sem>11</sem>
+		<description>
+			Surveys data management, including file systems, database management systems design, physical data organizations, data models, query languages, concurrency, and database protection.*
+		</description>
+	</course>
+
+	<course>
+		<title>Network Systems</title>
+		<cat>CSCI 4273</cat>
+		<type>cs</type>
+		<pro>true</pro>
+		<sem>11</sem>
+		<description>
+			Focuses on design and implementation of network programs and systems, including topics in network protocols, file transfer, client-server computing, remote procedure call, and other contemporary network system design and programming techniques.*
+		</description>
+	</course>
+
+	<course>
+		<title>Software Engineering Projects I</title>
+		<cat>CSCI 4308</cat>
+		<type>cs</type>
+		<pro>true</pro>
+		<sem>11</sem>
+		<description>
+			Advanced practicum in which students design, implement, document and test software systems for use in industry, non-profits, government and research institutions. Also offers extensive experience in oral and written communication throughout the software life-cycle.*
+		</description>
+	</course>
+
+	<course>
+		<title>Weather Analysis and Forecasting</title>
+		<cat>ATOC 4700</cat>
+		<type>atoc</type>
+		<pro>true</pro>
+		<sem>11</sem>
+		<description>
+			Utilizing a range of operational weather observations to analyze current weather conditions, providing hands-on experience interpreting observations and relating those observations to the physical principles that govern atmospheric behavior is the course emphasis. this class focuses on how to read weather reports, analyze observations, and how to prepare weather maps to analyze current conditions and how to interpret numerical weather forecasts.*
+		</description>
+	</course>
+
+	
+	<!-- Semester 12 -->
+	
+
+	<course>
+		<title>Software Engineering Projects II</title>
+		<cat>CSCI 4318</cat>
+		<type>cs</type>
+		<pro>fut</pro>
+		<sem>12</sem>
+		<description>
+			Second semester of an advanced practicum in computer science.*
+		</description>
+	</course>
+
+	<course>
+		<title>Fundamentals of Digital Design</title>
+		<cat>ATLS 3030</cat>
+		<type>tam</type>
+		<pro>fut</pro>
+		<sem>12</sem>
+		<description>
+			The fundamental goal of this course is to teach students how to use digital design tools effectively and compellingly. Through lectures, class discussions, projects and critiques, this course will cover the critical, theoretical, and technical skill sets necessary to become a more engaging, thoughtful, and articulate designer.*
+		</description>
+	</course>
+
+	<course>
+		<title>Capstone Projects</title>
+		<cat>ATLS 4010</cat>
+		<type>tam</type>
+		<pro>fut</pro>
+		<sem>12</sem>
+		<description>
+			The focus of this advanced practicum course is the development of an individual thesis project. Specific class sessions will feature a combination of lectures, demonstrations, guest speakers, lab sessions, and critiques. This course also entails group work, portfolio development, critical theoretical readings, and a significant written component.*
+		</description>
+	</course>
+
+	<course>
+		<title>Unix System Administration</title>
+		<cat>CSCI 4113</cat>
+		<type>cs</type>
+		<pro>fut</pro>
+		<sem>12</sem>
+		<description>
+			Introduces UNIX (Linux) system administration and related topics, including trouble-shooting system and network problems, hardware and software configuration and installation, basic scripting, and security aspects of Internet hosts. Students build a Linux server from the ground up, using provided computing resources, and must maintain and secure the server themselves.*
+		</description>
+	</course>
+
+	<course>
+		<title>ATOC Class TBD</title>
+		<cat>ATOC 0000</cat>
+		<type>atoc</type>
+		<pro>fut</pro>
+		<sem>12</sem>
+		<description>
+			TBD
+		</description>
+	</course>
+
+
+</catalog>
+
+<!--
+	<course>
+		<title></title>
+		<cat></cat>
+		<type></type>
+		<pro>fut</pro>
+		<sem>12</sem>
+		<description>
+		
+		</description>
+	</course>
+-->

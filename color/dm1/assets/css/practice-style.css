@@ -1,0 +1,113 @@
+/* Style Sheet for Patrick E. Vargas (patrick.vargas@colorado.edu)
+ *
+ * Color Scheme (https://kuler.adobe.com/)
+ * rgb(120, 30, 46) | rgb(63, 55, 142) | rgb(75, 127, 140) | rgb(137, 165, 75) | rgb(170, 101, 43)
+ */
+
+/* Body and Base Tags */
+body { 
+	font-family:       'Scada', sans-serif;
+	font-size:         12pt;
+  line-height:       18pt;
+	background-color:  rgb(0, 0, 0);
+}
+
+/* Headers */
+h1, h2, h3 { font-family: 'Seaweed Script', cursive; }
+h1, h2 { 
+}
+
+/* Links */
+a         { text-decoration: none; }
+a:link    { color: rgb(255, 201, 143); }
+a:active  { color: rgb(170, 101, 43); }
+a:visited { color: rgb(220, 151, 100); }
+a:hover   { color: rgb(255, 201, 243); }
+
+/** Sections **/
+#glad { width: 960px; }
+#glad, header, footer, article { margin: 0px auto; }
+
+/* Header */
+header {
+	background-color: rgb(120, 30, 46);
+  background-image: url('../img/practice-title.png');
+	padding:          0em;
+  margin:           0.5em;
+  border:           2px solid rgb(220, 130, 146);
+  height:           145px;
+  width:            944px;
+}
+hgroup {
+  font-size: 1px;
+  text-indent: -9999em;
+}
+
+/* Navigation */
+nav { background-color: rgb(63, 55, 142); border: 2px solid rgb(163, 155, 242); margin: 0.5em;}
+nav ul { list-style-type: none; }
+nav ul li { display: inline; }
+nav ul li a { 
+	padding:  2em;
+  color:   rgb(255, 255, 255);
+	
+	/* Cool Transition */
+	-webkit-transition:  all 0.2s ease;
+	-moz-transition:     all 0.2s ease;
+	-o-transition:       all 0.2s ease;
+	transition:          all 0.2s ease;
+}
+nav ul li a.active  { background-color: rgb(113, 105, 192); }
+nav ul li a:hover   { background-color: rgb(163, 155, 242); }
+
+/* Main Content */
+article { 
+  background-color: rgb(75, 127, 140); 
+  border:           2px solid rgb(175, 227, 240);
+  padding:          2em;
+  margin:           0.5em;
+}
+
+aside { float: left; }
+aside figure { text-align: center; }
+aside figure img {
+  background-color: rgb(25, 77, 90);
+  padding:          1em;
+  margin:           0.5em;
+}
+
+/* Footer */
+footer { 
+  background-color: rgb(137, 165, 75); 
+  border:           2px solid rgb(237, 255, 175);
+  padding:          1em;
+  margin:           0.5em;
+}
+
+/* Imported fonts courtesy of Google. */
+/* Main Font */
+@font-face {
+  font-family: 'Scada';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Scada'), local('Scada-Regular'), url(http://themes.googleusercontent.com/static/fonts/scada/v1/uIa9-L3o-vNXk-UyBI3PSw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Scada';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Scada Bold'), local('Scada-Bold'), url(http://themes.googleusercontent.com/static/fonts/scada/v1/7GOX6HxeYisYUc-2bmBZNPesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Scada';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Scada Italic'), local('Scada-Italic'), url(http://themes.googleusercontent.com/static/fonts/scada/v1/YQUUNoVhLcFoN8Z7nkbOYw.woff) format('woff');
+}
+/* Header Font */
+@font-face {
+  font-family: 'Seaweed Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Seaweed Script'), local('SeaweedScript-Regular'), url(http://themes.googleusercontent.com/static/fonts/seaweedscript/v1/eorWAPpOvvWrPw5IHwE60FhlQWQpSCpzb2Peu3I-Q34.woff) format('woff');
+}

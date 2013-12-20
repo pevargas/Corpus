@@ -1,0 +1,337 @@
+/*  File: base.css
+ *  Style Guide for Patrick E. Vargas (patrick.vargas@colorado.edu) 
+ */
+
+@darkest: rgb(201, 49, 61);
+@background: rgb(38, 31, 39);
+@foreground: rgb(205, 212, 82);
+@lightest: rgb(254, 225, 105);
+@accent: rgb(249, 114, 46  );
+
+/* Mixins */
+.transition {
+  -webkit-transition:  all 0.2s ease-in-out;
+  -moz-transition:     all 0.2s ease-in-out;
+  -o-transition:       all 0.2s ease-in-out;
+  transition:          all 0.2s ease-in-out;
+}
+.box-model {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;  
+  box-sizing: border-box; 
+}
+.shaddow-inset {
+  -webkit-box-shadow: inset 0 0 1em @background;
+  -moz-box-shadow:    inset 0 0 1em @background;
+  -o-box-shadow:      inset 0 0 1em @background;
+  box-shadow:         inset 0 0 1em @background;
+}
+
+/* Main Content */
+html {
+  background-size:      cover;
+  background-position:  center;
+  background-color:     @background;
+}
+
+body {
+  padding: 0em;      margin: 0;
+  font-size:         12pt;
+  line-height:       24pt;
+  letter-spacing:    1pt;
+  color:             lighten(@background, 75%);
+  background-color:  fade(@background, 90%);
+  font-family:       'Righteous', sans-serif;
+  height:            100%;
+  .box-model;
+}
+
+.glad   { 
+  width: 80%; min-width: 960px; margin: 0 auto;
+  * { .box-model; }
+}
+
+/* Headers */
+header {
+  display: block;
+  padding: 3.5em 0 0.5em;
+  * { margin: 0;  }
+}
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size:    4em;
+  text-align:   center;
+  padding:      0.1em;
+  a { color:    @lightest; }
+}
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size:   1.5em;
+  padding:     0.5em 0;
+  color:       @foreground;
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline;
+      &:first-child:before { content: ''; margin: 0; }
+      &:before { content: '\2666'; margin: 0 0.5em; color: @accent; }
+    }
+  }
+}
+
+/* Homepage Slide Show */
+#slideshow {
+  float: right; 
+  margin: 1.04166666667%; 
+  position: relative; 
+  width: 47.9166666667%;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;  /* initial ratio of 1:1*/
+  } 
+}
+.slide, #quote-container {
+  position:         absolute;
+  top: 0;           left: 0; 
+  bottom: 0;        right: 0;
+  background-size:  100%;
+  border-radius:    2em;
+  .box-model;
+  overflow:         hidden;
+}
+.slide { display:         none; }
+#quotes, .quotes {
+  font-size:        1.25em;
+  background-color: fade(@background, 80%);
+  padding:          1em;
+}
+.quotes {
+  background-color: lighten(@background, 75%);
+  border-radius:    2em;
+  color:            @background;
+  width:            800px; 
+}
+#quotes { 
+  z-index:      25;
+  width: 100%;  height: auto; 
+  position:     relative;
+  display:      block;
+  .box-model;
+}
+
+.author { text-align: right;
+  &:before { content:"\2014\2003"; }
+}
+
+#controls { 
+  z-index:            0;
+  margin-top:         -566px;
+  display:            none;
+}
+/*#ptrL, #ptrR {
+  z-index:            50;
+  background-color:   fade(@background, 80%);
+  border-radius:      2em;
+  font-size:          2em;
+  margin:             1em;
+  padding:            0.5em 0.75em;
+  display:            block;
+  position:           relative;
+  top:                237px;
+  cursor:             pointer;
+  filter:             alpha(opacity=50);
+  opacity:            0.5;
+  .transition;
+}
+#ptrL:hover, #ptrR:hover {  filter: alpha(opacity=100); opacity: 1.0; }
+#ptrL { float: left;  }
+#ptrR { float: right; }
+*/
+
+/* Color the links */
+a {
+  cursor: pointer;
+  &:link    { color: @lightest; text-decoration: none; }
+  &:visited { color: darken(@lightest, 25%); text-decoration: none; }
+  &:hover   { color: @lightest; text-decoration: none; }
+  &:active  { color: @lightest; text-decoration: none; }
+}
+/* Navigation BEGIN */
+nav { 
+  overflow: auto;
+  *  { margin: 0; padding: 0; }
+  ul { 
+    list-style-type: none;
+    li { 
+      float: left; margin: 1.04166666667%; position: relative; width: 31.15942028985507%;
+      &:before { 
+        content: "";
+        display: block;
+        padding-top: 100%;  /* initial ratio of 1:1*/ 
+      }
+      a { 
+        position:       absolute;
+        top: 0;         left: 0; 
+        bottom: 0;      right: 0;
+        display:        block;
+        padding:        10%;
+        border-radius:  1em;
+        background:     no-repeat 110px 110px fade(lighten(@background, 75%), 20%);
+        .transition;
+
+        &:link    { color: lighten(@background, 75%); }
+        &:visited { color: fade(lighten(@background, 75%), 20%); }
+        &:hover,  &.hover   { 
+          border-radius:      2em;
+          background-image:   url('../img/logo-overlay.png');
+          background-position: center;
+          .shaddow-inset;
+        }
+        &:hover { background-image: url('../img/logo.png'); background-size: 75% auto; color: transparent; }
+        &.hover { background-image: url('../img/logo-overlay.png'); color: @background; }
+      
+        &.yellow:hover, &.yellowhover { background-color: @lightest;   }
+        &.green:hover,  &.greenhover  { background-color: @foreground; }
+        &.orange:hover, &.orangehover { background-color: @accent;     }
+        &.red:hover,    &.redhover    { background-color: @darkest;    }
+        &:active        { color: darken(@lightest, 25%); }
+      }
+    }
+  }
+}
+.extra { 
+  color:  fade(lighten(@background, 75%), 20%); 
+  &:hover { color: @background; }
+}
+
+#linkedin:hover     { background-image: url('../img/linkedin.png'); }
+#github:hover       { background-image: url('../img/github.png'); }
+#testimonial:hover  { background-image: url('../img/testimonial.png'); }
+#dm1:hover          { background-image: url('../img/dm1.png'); }
+#careers:hover      { background-image: url('../img/careers.png'); }
+/* Navigation END */
+
+/* Lightbox BEGIN */
+#lightbox-test {
+    background-color: rgb(26, 34, 42);
+    display:          none;
+    position:         fixed;
+    width: 100%;      height: 100%;
+    top: 0;           left: 0;
+    z-index: 200;
+    cursor: pointer;
+}
+#inst { 
+  position: fixed;
+  right: 2em;
+  color: rgba(226, 234, 242, 0.9);
+}
+#content { position: fixed; }
+/* Lightbox END */
+
+/* Imported fonts courtesy of Google. */
+/* Main Font */
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Righteous'), local('Righteous-Regular'), url(http://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+/* Title Font */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(http://themes.googleusercontent.com/static/fonts/lobster/v5/MWVf-Rwh4GLQVBEwbyI61Q.woff) format('woff');
+}
+
+/*
+1/4 = 22.9166666667%
+1/2 =  47.9166666667%
+1/3 = 31.25%
+margin: 1.04166666667%; 
+*/
+
+.g12, .g11, .g10, .g9, .g8, .g7, .g6, .g5, .g4, .g3, .g2, .g1 { margin: 0.52083333333333%; } /* 5px / 960px */
+.g12 { width: 98.95833333333333%; }
+.g11 { width: 90.62500000000000%;}
+.g10 { width: 82.29166666666667%;}
+.g9  { width: 73.95833333333333%;}
+.g8  { width: 65.62500000000000%;}
+.g7  { width: 57.29166666666667%;}
+.g6  { width: 48.95833333333333%;}
+.g5  { width: 40.62500000000000%;}
+.g4  { width: 32.29166666666667%;}
+.g3  { width: 23.95833333333333%;}
+.g2  { width: 15.62500000000000%;}
+.g1  { width:  7.29166666666667%;}
+
+
+/* Breadcrumbs && Footer BEGIN */
+#crumbs, footer { 
+  background-color: lighten(@background, 10%); 
+  width:            100%; 
+  clear:            both;
+  position:         fixed;
+  display:          block;
+  z-index:          100;
+  ul {
+    margin: 0; padding: 0;
+    list-style: none; 
+    li { 
+      display: inline;
+      &:before { margin: 0 0.5em; color: @accent; }
+      &:first-child:before { content: ''; margin: 0;}
+    }
+    a {
+      &:link    { color: fade(@lightest, 75%); }
+      &:visited { color: fade(@lightest, 50%); }
+      &:hover   { color:      @lightest;       }
+      &:active  { color: fade(@lightest, 25%); }
+    }
+  }
+}
+#crumbs { top: 0; ul li:before { content: '\003e'; } }
+footer { bottom: 0; ul li:before  { content: '\2666'; } }
+/* Breadcrumbs && Footer END */
+/* Site Map BEGIN */
+#sitemap {
+  display:          none;
+  position:         fixed;
+  left: 0;    top: 0;   bottom: 0;
+  background-color: @background;
+  border-right:     1em solid lighten(@background, 75%);
+  cursor:           pointer;
+  z-index:          200;
+  width:  20%;      min-width: 275px;
+  h1 { 
+    font-size: 2em; white-space: nowrap; display: block; margin: 0.5em auto; text-align: center; 
+    a { padding: 0.5em; color: @foreground;  }
+  }
+  
+  ul { 
+    margin: 0; padding: 0;
+    li a {
+      display: block;
+      list-style: none;
+      background-color: fade(lighten(@background, 25%), 50%);
+      padding: 0.5em;
+      margin: 0.5em;
+      border-radius: 1em;
+      &:hover {
+        background-color: fade(lighten(@background, 50%), 50%);
+      }
+    }
+    ul li a:before {
+      content: '\003e';
+      margin-right: 0.5em;
+    }
+  }
+}
+#click-close { position: absolute; bottom: 0; right: 2em; color:(@lightest); text-align: right; }
+#menu { cursor: pointer; }
+/* Site Map END */

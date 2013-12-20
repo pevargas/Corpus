@@ -1,0 +1,53 @@
+/* Color Scheme 
+  gray:   rgb(66, 71, 78);
+  dkblue: rgb(79, 131, 199);
+  ltblue: rgb(152, 204, 255);
+  cream:  rgb(253, 246, 227);
+  salmon: rgb(227, 127, 97);
+*/
+
+body {
+  font-size: 12pt;
+  background-color: rgb(79, 131, 199);
+  margin: 0; padding: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container { 
+  margin: 10px auto; 
+  width: 960px;
+  background-color: rgb(253, 246, 227);
+  border-radius: 1em;
+  padding: 10px;
+}
+
+header, footer {
+  background-color: rgb(152, 204, 255);
+  text-align: center;
+  border-radius: 1em;
+  padding: 10px;
+}
+
+a { text-decoration: none; }
+a:link    { color: rgb(227, 127,  97); }
+a:visited { color: rgb(177,  77,  47); }
+a:hover   { color: rgb(255, 177, 147); }
+a:active  { color: rgb(255, 255, 255); }
+
+ol {
+  list-style-type: none;
+}
+
+/* Font from Google */
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Sans Regular'), local('MerriweatherSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/merriweathersans/v1/AKu1CjQ4qnV8MUltkAX3sMoBJSyBiVuloIc8IXLz46o.woff) format('woff');
+}
+@font-face {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merriweather Sans Bold'), local('MerriweatherSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/merriweathersans/v1/6LmGj5dOJopQKEkt88GowaILZ3_VFR4y34zupljc1bH3rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+}

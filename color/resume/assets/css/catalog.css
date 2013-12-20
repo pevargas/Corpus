@@ -1,0 +1,71 @@
+/*  File: catalog-style.css
+ *  Style Guide for Patrick E. Vargas (patrick.vargas@colorado.edu) 
+ *  Color Scheme: (from kuler.adobe.com)
+ *  maroon rgb(91, 61, 77) | orange rgb(220, 152, 63) | creme rgb(236, 222, 203) | blue rgb(121, 153, 166) | red rgb(188, 68, 92)
+ */
+
+.glad-dyn { width: 80%; min-width: 1024px; margin: 0 auto; }
+#catalog { margin: 0; padding: 0; list-style: none; }
+#catalog ul { 
+  margin: 0em;
+  padding: 0em;
+  list-style: none;
+} 
+#buttons { width: 100%; list-style: none; margin-bottom: 1em; }
+#buttons li { 
+  margin: 0.15em 0;
+  padding: 0.25em 0.5em;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  border: 0.1em solid rgb(91, 61, 77);
+  white-space: nowrap;
+
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition:    all 0.2s ease-in-out;
+  -o-transition:      all 0.2s ease-in-out;
+  transition:         all 0.2s ease-in-out;
+}
+#timescale { padding-left: 0; }
+#timescale li { border: none; background-color: rgb(91, 61, 77); color: rgb(236, 222, 203); }
+.selected { color: rgb(91, 61, 77); background-color: rgb(236, 222, 203); }
+.course {
+  cursor: pointer;
+  list-style: none;
+  /*margin: 0.5em;*/
+  padding: 0.5em;
+
+  width: 20em;
+  border: 0.1em solid rgb(91, 61, 77);
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box; 
+}
+
+.cs, #cs      { background-color: rgba(121, 153, 166, 1.0); }
+.tam, #tam    { background-color: rgba(220, 152,  63, 1.0); }
+.atoc, #atoc  { background-color: rgba(188,  68,  92, 1.0); }
+.cs, #cs, .tam, #tam, .atoc, #atoc { color: rgb(236, 222, 203);}
+
+.cs ul li:first-child, .tam ul li:first-child, .atoc ul li:first-child { background-color: rgba( 91,  61,  77, 0.5); }
+.mus ul li:first-child, .mat ul li:first-child, .hum ul li:first-child { background-color: rgba(236, 222, 203, 0.5); }
+
+.mus, #mus    { background-color: rgba(121, 153, 166, 0.5); }
+.mat, #mat    { background-color: rgba(220, 152,  63, 0.5); }
+.hum, #hum    { background-color: rgba(188,  68,  92, 0.5); }
+
+#cs:hover, #mus:hover   { background-color: rgba(121, 153, 166, 0.75); }
+#tam:hover, #mat:hover  { background-color: rgba(220, 152,  63, 0.75); }
+#atoc:hover, #hum:hover { background-color: rgba(188,  68,  92, 0.75); }
+
+.sub { display: none; }
+.desc { padding : 0.5em; }
+.sem { 
+  padding-top:          0.5em; 
+  background-image:     url('/vargasp/assets/img/logo-overlay.png');
+  background-size:      20pt;
+  background-repeat:    no-repeat;
+  background-position:  center 10pt;
+}
+.cat { float:  right; }

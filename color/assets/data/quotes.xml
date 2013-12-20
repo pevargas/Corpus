@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- <?xml-stylesheet type="text/xsl" href="res/quotes.xsl"?> -->
+<!--XML Database for Patrick Vargas-->
+<quote_pool>
+	
+	<quote>
+		<author>T. E. Lawrence</author>
+		<body>All men dream, but not equally. Those who dream by night in the dusty recesses of their minds, wake in the day to find that it was vanity: but the dreamers of the day are dangerous men, for they may act on their dreams with open eyes, to make them possible.</body>
+	</quote>
+	
+	<quote>
+		<author>Thomas Fuller</author>
+		<body>All things are difficult before they are easy.</body>
+	</quote>
+	
+	<quote>
+		<author>Karl Von Clausewitz</author>
+		<body>Although our intellect always longs for clarity and certainty, our nature often finds uncertainty fascinating.</body>
+	</quote>
+	
+	<quote>
+		<author>Judy Garland</author>
+		<body>Always be a first-rate version of yourself, instead of a second-rate version of somebody else.</body>
+	</quote>
+
+  <quote>
+		<author>Dr. Seuss</author>
+		<body>Be who you are and say what you feel, because those who mind don't matter and those who matter don't mind.</body>
+	</quote>
+	
+  <quote>
+    <author>Oscar Wilde</author>
+    <body>Be yourself; everyone else is already taken.</body>
+  </quote>
+  
+  <quote>
+    <author>Leigh Hunt</author>
+    <body>The beautiful attracts the beautiful.</body>
+  </quote>
+  
+	<quote>
+		<author>Park Benjamin</author>
+		<body>Beauty and grace command the world.</body>
+	</quote>
+	
+	<quote>
+		<author>Ludwig van Beethoven</author>
+		<body>Beethoven can write music, thank God, but he can do nothing else on earth.</body>
+	</quote>
+
+	<quote>
+		<author>Paul Rudnick</author>
+		<body>Being gay and single is the new smoking. It won't be socially acceptable anymore, and you will have to go outside.</body>
+	</quote>
+
+	<quote>
+		<author>Mark Twain</author>
+		<body>The best way to cheer yourself is to cheer somebody else up.</body>
+	</quote>
+
+	<quote>
+		<author>Alan Kay</author>
+		<body>The best way to predict the future is to invent it.</body>
+	</quote>
+	
+	<quote>
+		<author>Do Hyun Choe</author>
+		<body>The biggest thing in this world, bigger than the ocean and the sky, is your heart.</body>
+	</quote>
+	
+	<quote>
+		<author>Woody Allen</author>
+		<body>Bisexuality immediately doubles your chances for a date on Saturday night.</body>
+	</quote>
+	
+  <quote>
+    <author>Carl Sagan</author>
+    <body>A book is proof that humans are capable of working magic.</body>
+  </quote>
+
+	<quote>
+		<author>Linda Lingle</author>
+		<body>But before looking to the future, let's glance back at the road we've traveled these past two years because that is the source of much of the optimism we are all feeling about the future.</body>
+	</quote>
+	
+	<quote>
+		<author>William Scranton</author>
+		<body>By Thursday morning, we'd gotten over the worst of it.</body>
+	</quote>
+	
+  <quote>
+    <author>Dennis Ritchie</author>
+    <body>C++ and Java, say, are presumably growing faster than plain C, but I bet C will still be around.</body>
+  </quote>
+
+  <quote>
+    <author>Alan Perlis</author>
+    <body>Computer Science is embarrassed by the computer.</body>
+  </quote>
+
+	<quote>
+		<author>Ray Kroc</author>
+		<body>Creativity is a highfalutin word for the work I have to do between now and Tuesday.</body>
+	</quote>
+	
+  <quote>
+    <author>Steve Martin</author>
+    <body>A day without sunshine is like, you know, night.</body>
+  </quote>
+
+	<quote>
+		<author>Elbert Hubbard</author>
+		<body>Do not take life too seriously. You will never get out of it alive.</body>
+	</quote>
+
+	<quote>
+		<author>Janis Joplin</author>
+		<body>Don't compromise yourself. You're all you've got.</body>
+	</quote>
+
+	<quote>
+		<author>Dan Rather</author>
+		<body>Don't taunt the alligator until after you've crossed the creek.</body>
+	</quote>
+
+	<quote>
+		<author>Anonymous</author>
+		<body>Everything will be okay in the end. If it's not okay, it's not the end.</body>
+	</quote>
+	
+	<quote>
+		<author>Mother Teresa</author>
+		<body>Every time you smile at someone, it is an action of love, a gift to that person, a beautiful thing.</body>
+	</quote>
+	
+	<quote>
+		<author>Ralph Waldo Emerson</author>
+		<body>Finish each day and be done with it. You have done what you could.</body>
+	</quote>
+	
+	<quote>
+		<author>Carl Sagan</author>
+		<body>For small creatures such as we the vastness is bearable only through love.</body>
+	</quote>
+
+  <quote>
+		<author>Reinhold Neibuhr</author>
+		<body>Grant me the serenity to accept the things I cannot change, courage to change those that I can, and wisdom to know the difference.</body>
+	</quote>
+
+	<quote>
+		<author>Igor Stravinsky</author>
+		<body>A good composer does not imitate; he steals.</body>
+	</quote>
+
+	<quote>
+		<author>Neil deGrasse Tyson</author>
+		<body>The good thing about science is that it's true whether or not you believe in it.</body>
+	</quote>
+
+  <quote>
+    <author>Lily Tomlin</author>
+    <body>I always wanted to be somebody, but now I realize I should have been more specific.</body>
+  </quote>
+
+	<quote>
+		<author>Ellen Page</author>
+		<body>I call myself a feminist when people ask me if I am, and of course I am 'cause it's about equality, so I hope everyone is. You know you're working in a patriarchal society when the word feminist has a weird connotation.</body>
+	</quote>
+
+	<quote>
+		<author>W. C. Fields</author>
+		<body>I once spent a year in Philadelphia, I think it was on a Sunday.</body>
+	</quote>
+
+	<quote>
+		<author>John Burroughs</author>
+		<body>I still find each day too short for all the thoughts I want to think, all the walks I want to take, all the books I want to read, and all the friends I want to see.</body>
+	</quote>
+
+  <quote>
+    <author>Stephen Hawking</author>
+    <body>I think computer viruses should count as life. I think it says something about human nature that the only form of life we have created so far is purely destructive. We've created life in our own image.</body>
+  </quote>
+
+	<quote>
+		<author>Louise Brealey</author>
+		<body>I'd like every man who doesn't call himself a feminist to explain to the women in his life why he doesn't believe in equality for women.</body>
+	</quote>
+
+	<quote>
+		<author>Lucille Ball</author>
+		<body>I'd rather regret the things I've done than regret the things I haven't done.</body>
+	</quote>
+
+	<quote>
+		<author>Mitch Hedberg</author>
+		<body>I'm sick of following my dreams. I'm just going to ask them where they're going and hook up with them later.</body>
+	</quote>
+
+	<quote>
+		<author>Jim Rohn</author>
+		<body>If you don't like how things are, change it! You're not a tree.</body>
+	</quote>
+
+	<quote>
+		<author>Katharine Hepburn</author>
+		<body>If you obey all the rules, you miss all the fun.</body>
+	</quote>
+	
+	<quote>
+		<author>Noel Coward</author>
+		<body>If you must have motivation, think of your paycheck on Friday.</body>
+	</quote>
+
+	<quote>
+		<author>Jen Barber</author>
+		<body>If you type 'Google' into Google, you will break the Internet.</body>
+	</quote>
+
+	<quote>
+		<author>John Wooden</author>
+		<body>If you're not making mistakes, then you're not doing anything. I'm positive that a doer makes mistakes.</body>
+	</quote>
+	
+	<quote>
+		<author>Carol Vargas</author>
+		<body>If it's meant to be, it will happen.</body>
+	</quote>
+	
+	<quote>
+		<author>Napoleon Bonaparte</author>
+		<body>Imagination rules the world.</body>
+	</quote>
+	
+	<quote>
+		<author>William G. McAdoo</author>
+		<body>It is impossible to defeat an ignorant man in argument.</body>
+	</quote>
+	
+	<quote>
+		<author>Lucille Ball</author>
+		<body>It's a helluva start, being able to recognize what makes you happy.</body>
+	</quote>
+
+  <quote>
+    <author>John Philip Sousa</author>
+    <body>Jazz will endure just as long as people hear it through their feet instead of their brains.</body>
+  </quote>
+
+  <quote>
+    <author>Neil Gaiman</author>
+    <body>Kiss someone who thinks you're wonderful, and don't forget to make some art.</body>
+  </quote>
+
+	<quote>
+		<author>Rev Dr. Martin Luther King</author>
+		<body>Knowledge is a process of piling up facts; Wisdom lies in their simplification.</body>
+	</quote>
+	
+	<quote>
+		<author>Erwin Dieterich</author>
+		<body>The last good thing written in C was Franz Schubert's Symphony Number 9.</body>
+	</quote>
+	
+	<quote>
+		<author>Henri Frederic Amiel</author>
+		<body>Learn to... be what you are, and learn to resign with a good grace all that you are not.</body>
+	</quote>
+	
+  <quote>
+    <author>Rumi</author>
+    <body>Life is a balance of holding on and letting go.</body>
+  </quote>
+
+  <quote>
+    <author>Oscar Wilde</author>
+    <body>Moderation is a fatal thing. Nothing succeeds like excess.</body>
+  </quote>
+  
+
+	<quote>
+		<author>Morrie Schwartz</author>
+		<body>The most important thing in life is to learn how to give out love, and to let it come in.</body>
+	</quote>
+	
+	<quote>
+		<author>Albert Einstein</author>
+		<body>The most important thing is not to stop questioning.</body>
+	</quote>
+
+	<quote>
+		<author>Dalai Lama</author>
+		<body>Most of our troubles are due to our passionate desire for and attachment to things that we misapprehend as enduring entities.</body>
+	</quote>
+	
+	<quote>
+		<author>Ludwig van Beethoven</author>
+		<body>Music is a higher revelation than philosophy.</body>
+	</quote>
+
+ 	<quote>
+		<author>Claude Debussy</author>
+		<body>Music is the silence between the notes.</body>
+	</quote>
+
+	<quote>
+		<author>Dame Edna Everage</author>
+		<body>Never be afraid to laugh at yourself, after all, you could be missing out on the joke of the century.</body>
+	</quote>
+
+	<quote>
+		<author>Marlon Brando</author>
+		<body>Never confuse the size of your paycheck with the size of your talent.</body>
+	</quote>
+
+  <quote>
+    <author>Steve Wozniak</author>
+    <body>Never trust a computer you can't throw out a window.</body>
+  </quote>
+
+	<quote>
+		<author>Ralph Waldo Emerson</author>
+		<body>Nothing great was ever achieved without enthusiasm.</body>
+	</quote>
+	
+  <quote>
+    <author>Ralph Waldo Emerson</author>
+    <body>Once you make a decision, the universe consipres to make it happen.</body>
+  </quote>
+  
+
+	<quote>
+		<author>Zig Ziglar</author>
+		<body>Positive thinking will let you do everything better than negative thinking will.</body>
+	</quote>
+
+  <quote>
+		<author>Paul J. Meyer</author>
+		<body>Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.</body>
+	</quote>
+	
+	<quote>
+		<author>Unknown</author>
+		<body>Replace fear of the unknown with curiosity.</body>
+	</quote>
+
+	<quote>
+		<author>Alan Jay Lerner</author>
+		<body>A schedule so tight that it would only work if I didn't sleep on Monday nights.</body>
+	</quote>
+	
+	<quote>
+		<author>Cave Johnson</author>
+		<body>Science isn't about why, it's about why not. You ask: why is so much of our science dangerous? I say: why not marry safe science if you love it so much. In fact, why not invent a special safety door that won't hit you in the butt on the way out, because you are fired. Yes you, box your stuff, out the front door, parking lot, car, goodbye.</body>
+	</quote>
+
+  <quote>
+    <author>Anonymous</author>
+    <body>Silence is the most powerful scream.</body>
+  </quote>
+
+	<quote>
+		<author>Oscar Wilde</author>
+		<body>Some cause happiness wherever they go; others, whenever they go.</body>
+	</quote>
+
+	<quote>
+		<author>Thomas Szasz</author>
+		<body>The stupid neither forgive nor forget; the naive forgive and forget; the wise forgive but do not forget.</body>
+	</quote>
+	
+	<quote>
+		<author>Oprah Winfrey</author>
+		<body>Surround yourself only with people who are going to lift you higher.</body>
+	</quote>
+	
+	<quote>
+		<author>Ernest Hemingway</author>
+		<body>That terrible mood of depression of whether it's any good or not is what is known as The Artist's Reward.</body>
+	</quote>
+
+  <quote>
+    <author>Albert Schweitzer</author>
+    <body>There are two means of refuge from the miseries of life: music and cats.</body>
+  </quote>
+
+  <quote>
+    <author>Ray Bradbury</author>
+    <body>There are worse crimes than burning books. One of them is not reading them.</body>
+  </quote>
+
+	<quote>
+		<author>Charlie Parker</author>
+		<body>They teach you there's a boundary line to music. But man, there's no boundary line to art.</body>
+	</quote>
+	
+	<quote>
+		<author>Robert A. Heinlein</author>
+		<body>They didn't want it good, they wanted it Wednesday.</body>
+	</quote>
+	
+	<quote>
+		<author>JFK</author>
+		<body>Tolerance implies no lack of commitment to one's own beliefs. Rather it condemns the oppression or persecution of others.</body>
+	</quote>
+	
+	<quote>
+		<author>Eugene Bullard</author>
+		<body>Tout le sang qui coule rouge; All blood is red.</body>
+	</quote>
+	
+  <quote>
+    <author>Dennis Ritchie</author>
+    <body>UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity.</body>
+  </quote>
+  
+	<quote>
+		<author>Katharine Hepburn</author>
+		<body>The Venus flytrap--a devouring organism, aptly named for the goddess of love.</body>
+	</quote>
+	
+	<quote>
+		<author>Yogi Berra</author>
+		<body>We're lost, but we are making good time.</body>
+	</quote>
+	
+	<quote>
+		<author>Robert Wilensky</author>
+		<body>We've all heard that million monkeys banging on a million typewriters will eventually reproduce the entire works of Shakespeare. Now, thanks to the Internet, we know this is not true.</body>
+	</quote>
+	
+  <quote>
+    <author>John Cocteau</author>
+    <body>What the public criticizes in you, cultivate. It is you.</body>
+  </quote>
+
+	<quote>
+		<author>Lou Holtz</author>
+		<body>When all is said and done, more is said than done.</body>
+	</quote>
+	
+	<quote>
+		<author>Pablo Picasso</author>
+		<body>When you come right down to it, all you have is yourself. All the rest is nothing.</body>
+	</quote>
+	
+	<quote>
+		<author>Anita O'Day</author>
+		<body>When you haven't got that much voice you have to use all the cracks and the crevices and the black and the white keys.</body>
+	</quote>
+
+	<quote>
+		<author>Gloria Pritchett</author>
+		<body>Where I come from, men cherish women. It goes wife, mistress, dog. Dog always at the bottom.</body>
+	</quote>
+	
+	<quote>
+		<author>Hans Christian Andersen</author>
+		<body>Where words fail, music speaks.</body>
+	</quote>
+
+	<quote>
+		<author>Dr. Evil</author>
+		<body>Why make trillions when we can make... billions?</body>
+	</quote>
+	
+	<quote>
+		<author>Jessica Hische</author>
+		<body>The work you do while you procrastinate is probably the work you should be doing for the rest of your life.</body>
+	</quote>
+	
+  <quote>
+    <author>Rumi</author>
+    <body>You are not a drop in the ocean. You are the entire ocean in a drop.</body>
+  </quote>
+  
+
+	<!--
+	<quote>
+		<author></author>
+		<body></body>
+	</quote>
+	-->
+
+</quote_pool>

@@ -1,0 +1,273 @@
+/* File:   dm1-style.css                    Feb 2013
+ * Author: Patrick E. Vargas                (patrick.vargas@colorado.edu)
+ * Description: 
+ *   Style sheet for redwood.colorado.edu/vargasp/dm1 directory.
+ *
+ * Color Scheme: 
+ * blue rgb(111, 137, 192) | white rgb(226, 234, 242) | gray rgb(137, 132, 119) | tan rgb(186, 176, 174) | brown rgb(126, 85, 84) */
+
+/* Basic Tags BEGIN */
+html {
+  overflow-x: hidden;
+}
+body { 
+  margin: 0;        padding: 0;
+  background-color: rgb(186, 176, 174);
+  color:            rgb(26, 34, 42);
+  font-family:      'Righteous', sans-serif;
+  font-size:        12pt;
+  letter-spacing:   1pt;
+  line-height:      24pt;
+}
+
+a { 
+  text-decoration:     none;
+  cursor:              pointer;
+  -webkit-transition:  all 0.5s ease;
+  -moz-transition:     all 0.5s ease;
+  -o-transition:       all 0.5s ease;
+  transition:          all 0.5s ease;
+}
+a:link    { color: rgb(111, 137, 192); }
+a:visited { color: rgb(91, 117, 172); }
+a:hover   { color: rgb(226, 234, 242); }
+a:active  { color: rgb(126, 134, 142); }
+
+cite { float: right; margin: 1em; }
+cite a {
+  padding:            1em;
+  font-size:          0.75em;
+  line-height:        1em;
+  background-color:   rgb(126, 85, 84);
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  -webkit-box-shadow: 0 0 10px rgba(26, 34, 42, 0.95);
+  -moz-box-shadow:    0 0 10px rgba(26, 34, 42, 0.95);
+  box-shadow:         0 0 10px rgba(26, 34, 42, 0.95);
+}
+blockquote {
+  display:            block;
+  padding:            1em;
+  margin:             1em;
+  color:              rgb(226, 234, 242);
+  background-color:   rgb(137, 132, 119);
+  overflow: auto;
+  border-bottom-left-radius: 1em;
+  border-top-right-radius: 1em;
+  -webkit-box-shadow: inset 0 0 20px rgba(26, 34, 42, 0.95);
+  -moz-box-shadow:    inset 0 0 20px rgba(26, 34, 42, 0.95);
+  box-shadow:         inset 0 0 20px rgba(26, 34, 42, 0.95);
+}
+section { clear: both; margin: 0px 10px 0px -6px;}
+/* Basic Tags END */
+
+.glad {
+  margin: 0 auto;
+  width: 960px;
+}
+
+/* Breadcrumbs && Footer BEGIN */
+.crumbs, footer { background-color: rgb(126, 85, 84); }
+footer { position: fixed; bottom: 0; width: 100%; }
+.crumbs ul, footer ul { list-style: none; margin: 0; padding: 0; }
+.crumbs ul li, footer ul li { display: inline; }
+.crumbs ul li:before, footer ul li:before { margin: 0 0.5em; color: rgb(111, 137, 192);}
+.crumbs ul li:before { content: '\003e'; }
+footer ul li:before  { content: '\2666'; }
+.crumbs ul li:first-child:before, 
+footer ul li:first-child:before { content: ''; margin: 0;}
+
+.crumbs a:link, footer a:link       { color: rgb(186, 176, 174); }
+.crumbs a:visited, footer a:visited { color: rgb(146, 136, 134); }
+.crumbs a:hover, footer a:hover     { color: rgb(206, 196, 194); }
+.crumbs a:active, footer a:active   { color: rgb(86,   76,  74); }
+/* Breadcrumbs && Footer END */
+
+#borderbar {
+  height: 24pt;
+  background-color: rgb(126, 85, 84);
+  overflow: none;
+}
+
+/* Content BEGIN */
+#main-content {
+  padding: 0.5em;
+  overflow: auto;
+  clear: both;
+}
+
+#sidebar { 
+  width:              225px;
+  display:            block;
+  float:              left; 
+  padding:            10px;
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing:    border-box; 
+  box-sizing:         border-box;
+}
+#sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#sidebar nav ul li a {
+  width: 100%;
+  padding-left: 0.5em;
+  display: block;
+  background-color: rgb(111, 137, 192);
+  -webkit-transition:  all 0.5s ease;
+  -moz-transition:     all 0.5s ease;
+  -o-transition:       all 0.5s ease;
+  transition:          all 0.5s ease;
+}
+#sidebar nav ul li a:link    { color: rgba(226, 234, 242, .75); }
+#sidebar nav ul li a:visited { color: rgba(226, 234, 242, .75); }
+#sidebar nav ul li a:hover   { color: rgba(226, 234, 242, 1); padding-left: 2em; }
+#sidebar nav ul li a:active  { color: rgba(226, 234, 242, .75); }
+#sidebar nav ul li a:after {
+  content: "\003e";
+  background-color: rgb(71, 87, 142);
+  padding: 0 0.5em;
+  display: block;
+  float: right;
+}
+
+#main {
+  width:   695px;
+  margin-left: 20px;
+  padding: 10px;
+  display: block;
+  float:   left;
+}
+/* Content END */
+
+/* Lightbox BEGIN */
+#lightbox {
+    background-color: rgb(26, 34, 42);
+    display:          none;
+    position:         fixed;
+    width: 100%;      height: 100%;
+    top: 0;           left: 0;
+    z-index: 200;
+    cursor: pointer;
+}
+#inst { 
+  position: fixed;
+  right: 2em;
+  color: rgba(226, 234, 242, 0.9);
+}
+#content { position: fixed; }
+/*#content img {
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(226, 234, 242, 0.25);
+  -moz-box-shadow:    0px 0px 10px 10px rgba(226, 234, 242, 0.25);
+  box-shadow:         0px 0px 10px 10px rgba(226, 234, 242, 0.25);
+}*/
+.seq { width: 480px; margin: 10px; }
+.seq2 { margin-top: 10px;}
+
+#content figure { margin: 0; padding: 0; }
+#vid  { 
+  position: fixed;
+  height:   480px;
+  width:    720px;
+  display:  none;
+  z-index:  500;
+}
+#poster {
+  z-index:          600;
+  position:         fixed;
+  display:          none;
+  background-image: url('../img/playbutton.png'), url('../img/quacktastrophy.jpg');
+  background-size:  54px 54px, 480px 480px;
+  background-position: 333px 213px, 120px 0;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #001d63;
+  cursor:           pointer;
+  height:           480px;
+  width:            720px;
+}
+#poster:hover {
+  background-image: url('../img/playbuttonhover.png'), url('../img/quacktastrophy.jpg');
+}
+
+/* Lightbox END */
+
+/* Animation stylings BEGIN */
+.mountains-lg, .mountains-md, .mountains-sm, .clouds-md, .clouds-sm { width: 100%; height: 125px; }
+.mountains-md, .mountains-sm, .clouds-md, .clouds-sm, .penguin { position: absolute; }
+.mountains-lg {  
+  z-index: 0;
+  background-color: rgb(111, 137, 192);
+  background-image: url('../img/dm1-mountains-lg.png');
+}
+.mountains-md {
+  z-index: 10;
+  background-image: url('../img/dm1-mountains-md.png');
+}
+.mountains-sm {
+  z-index: 20;
+  background-image: url('../img/dm1-mountains-sm.png');
+}
+.clouds-md {
+  z-index: 50;
+  background-image: url('../img/dm1-clouds-md.png');
+}
+.clouds-sm {
+  z-index: 100;
+  background-image: url('../img/dm1-clouds-sm.png');
+}
+.penguin {
+  z-index: 75;
+  top:     80px;  left:    50px;
+  height:  50px;  width:   50px;
+  background-image: url('../img/dm1-penguin.png');
+  background-size: 100% 100%;
+}
+#penguin-click { z-index: 110; background: none; cursor: pointer; }
+/* Animation stylings END */
+
+/* Music BEGIN */
+#sploosh { display: none; }
+#track {
+  position: relative;
+  z-index:  105;
+  height:   100%;     width:   0;
+  margin:   0;        display: none;
+  background-color:   rgb(111, 137, 192);
+  background-image:   url('../img/dm1-clouds-md.png');
+  border-top-right-radius: 5em;
+  border-bottom-right-radius: 5em;
+  -webkit-animation:  progress 2s infinite linear;
+  -moz-animation:     progress 2s infinite linear;
+  -o-animation:       progress 2s infinite linear;
+  animation:          progress 2s infinite linear;
+}
+#playing {
+  z-index:  110;
+  height:   50px;  width: 50px;
+  display:  block; float: right;
+  background-image: url('../img/dm1-penguin.png');
+  background-size: 100% 100%;
+  margin-top: -9px;
+  margin-right: -30px; 
+  margin-bottom: -9px;
+  cursor: col-resize;
+}
+.playing:before { content: 'Pause'; color: rgb(126, 85, 84); margin-right: 1em; }
+/* Music END */
+
+/* Imported fonts courtesy of Google. */
+/* Main Font */
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Righteous'), local('Righteous-Regular'), url(http://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+/* Complimentary Font */
+@font-face {
+  font-family: 'Aladin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Aladin Regular'), local('Aladin-Regular'), url(http://themes.googleusercontent.com/static/fonts/aladin/v2/kTqPiorwaKTiYJ9bkJEs-uvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
