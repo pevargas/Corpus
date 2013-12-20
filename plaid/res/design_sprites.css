@@ -1,0 +1,48 @@
+/* Design Sprite Definitons for Patrick Vargas
+ * patrick.vargas@colorado.edu
+ */
+
+/* ---( Images )--- */
+#content a {
+	text-decoration: none;
+}
+
+.btn {
+	width: 125px;
+	background: #fff;
+	padding: 15px;
+	margin: 1.0em;
+	cursor: pointer;
+	box-shadow: 5px 5px 20px #ccc;
+	-webkit-box-shadow: 5px 5px 20px #ccc;	/* Sarafi & Chrome */
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+	box-shadow: 5px 5px 20px #666;
+	-webkit-box-shadow: 5px 5px 20px #666;	/* Sarafi & Chrome */
+}
+
+.blackOverlay{
+	display: none;
+	position: fixed;
+	cursor: pointer;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 500;
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.whiteContent {
+	display: none;
+	position: fixed;
+	z-index: 510;
+	cursor: pointer;
+}

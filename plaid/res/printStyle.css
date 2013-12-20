@@ -1,0 +1,84 @@
+/* Style guide for Patrick Vargas Professional Website - Print Edition
+ * patrick.vargas@colorado.edu
+ */
+
+/* ---( Hide Web Specific Items BEGIN )--- */
+footer, #quote, .quote, nav, nav li, h2, .noprint { display: none!important; }
+/* ---( Hide Web Specific Items END )--- */
+
+/* ---( Remake Gride System BEGIN )--- */
+.clear { clear: both; }
+.full  { width: 100%!important; }
+.grid_6, .half { float: left; width: 48%; margin: 0 1%; }
+.grid_4 { float: left; width: 31%; margin: 0 1%; }
+.grid_3 { float: left; width: 23%; margin: 0 1%;}
+.grid_8 { width: 66%; margin: 0 1%; }
+.prefix_1, .prefix_2, .prefix_3, .prefix_4, .prefix_5 { margin: 0 auto; }
+/* ---( Remake Gride System END )--- */
+
+/* ---( Content BEGIN )--- */
+* {  margin: 0; }
+body {
+	font-family: main_font, courier, serif;
+	color: black; 
+	font-size: 8pt;
+	background: white;
+}
+abbr { border: none; }
+#content { width: 100%; margin: 0; float: none; }
+#content p { margin-left: 1em; margin-top: 0; }
+#content li { list-style-type: square; }
+#content li ul li { list-style-type: circle; }
+.contact { text-align: center; } 
+fieldset { float: none; margin: 0 auto; text-align: center; border: gray 1px solid; }
+.location, .location2 {
+	text-align: right;
+	margin-right: 1em;
+	font-style: italic;
+	clear: both;
+	margin-bottom: -1em;
+}
+.stars ul { margin-left: -1em; }
+.pushUp { margin-top: -1em; margin-bottom: 0;}
+.pullLeft { margin-left: -0.55em; }
+.pullLeftATad { margin-left: -0.05em; } 
+
+.title { width: 25%; display: table-cell; vertical-align:top; }
+.list { float:left; margin-left: 2em;}
+.proj th { border-bottom: 1px dotted black; }
+.proj td { vertical-align: top; }
+
+.noclear { clear: none; }
+/* ---( Content END )--- */
+
+/* ---( Links BEGIN )--- */
+a, a:link, a:visited, a:hover, a:active { text-decoration: none; color: black; }
+/* ---( Links END )--- */
+
+/* ---( Header BEGIN )--- */
+header { text-align: center; }
+h1 { font-family: main_font, veranda, sans-serif; margin: 0; }
+h3 {
+	font-family: main_font, veranda, sans-serif; 
+	padding: 0;
+	margin: 0.5em;
+	width: 100%;
+	text-align: left;
+	border-bottom: 1px solid black;
+}
+h4 { font-family: main_font, veranda, sans-serif; font-weight: bold;}
+.ptlogo { float: right; width: 40px; margin-left: -40px; }
+/* ---( Content Headings END )--- */
+
+/* ---( Cool Fonts BEGIN )--- */
+@font-face { font-family: awesome; src: url('dimis.ttf'); }
+@font-face { font-family: awesome_fill; src: url('dimitri.ttf'); }
+@font-face { font-family: main_font; src: url('CaviarDreams.ttf'); }
+@font-face { font-family: main_font; src: url('CaviarDreams_Bold.ttf'); font-weight: bold; }
+@font-face { font-family: main_font; src: url('CaviarDreams_BoldItalic.ttf'); font-style: italic; }
+/* ---( Cool Fonts END )--- */
+
+/* ---( HTML5 Tags BEGIN )--- */  
+header, section, footer,  
+aside, nav, article, figure { display: block; } 
+/* ---( HTML5 Tags END )--- */  

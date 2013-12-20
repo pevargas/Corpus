@@ -1,0 +1,2 @@
+ErrorDocument 404 http://rintintin.colorado.edu/~vargasp/notfound.htm
+Redirect http://rintintin.colorado.edu/~vargasp/catalog.xml http://redwood.colorado.edu/vargasp/resume/catalog.html

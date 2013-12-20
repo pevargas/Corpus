@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="res/design.xsl"?>
+<!--XML Database for Patrick Vargas-->
+
+<gallery>
+	
+	<!-- Row 1 -->
+
+	<image>
+		<title>Rainbow Ralphie Button</title>
+		<grp>GLBTQRC</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/RCButtons01.png</link>
+		<wid>500</wid>
+		<hei>500</hei>
+	</image>
+	
+	<image>
+		<title>Button reads, 'Homophobia: That's SO last millenium!'</title>
+		<grp>GLBTQRC</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/RCButtons03.png</link>
+		<wid>500</wid>
+		<hei>500</hei>
+	</image>
+	
+	<image>
+		<title>Button reads, 'Gay by birth, Fabulous by choice'</title>
+		<grp>GLBTQRC</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/RCButtons06.png</link>
+		<wid>500</wid>
+		<hei>500</hei>
+	</image>
+	
+	<image>
+		<title>Button reads, 'Closets are for clothes'</title>
+		<grp>GLBTQRC</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/RCButtons08.png</link>
+		<wid>500</wid>
+		<hei>500</hei>
+	</image>
+	
+	<image>
+		<title>Button reads, 'Engineering a more fabulous world!'</title>
+		<grp>SAGE</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/SAGEButtons07.png</link>
+		<wid>500</wid>
+		<hei>500</hei>
+	</image>
+	
+	<!-- Row 2 -->
+	
+	<image>
+		<title>Flyer for knitting group called, 'Knitting Man'</title>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/KnittingManHandBill.png</link>
+		<wid>500</wid>
+		<hei>647</hei>
+	</image>
+	
+	<image>
+		<title>Logo design for knitting group called, 'Knitting Man'</title>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/KnittingManLogo.png</link>
+		<wid>960</wid>
+		<hei>331</hei>
+	</image>
+	
+	<image>
+		<title>Program for my Shakespeare Class in which we performed 'Macbeth'; Outside</title>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/macbeth1.png</link>
+		<wid>647</wid>
+		<hei>500</hei>
+	</image>
+	
+	<image>
+		<title>Program for my Shakespeare Class in which we performed 'Macbeth'; Inside</title>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/macbeth2.png</link>
+		<wid>647</wid>
+		<hei>500</hei>
+	</image>
+	
+	<image>
+		<title>Flyer for Resume Workshop for GLBTQ and ally students.</title>
+		<grp>SAGE</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/SAGEFlyers02.png</link>
+		<wid>500</wid>
+		<hei>647</hei>
+	</image>
+	
+	<!-- Row 3 -->
+	
+	<image>
+		<title>Flyer for Student Alliance of GLBT Engineers meetings</title>
+		<grp>SAGE</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/SAGEFlyers01.png</link>
+		<wid>500</wid>
+		<hei>647</hei>
+	</image>
+	
+	<image>
+		<title>Buffalo has the word 'SAGE' written on it, with the outline of a gear</title>
+		<grp>SAGE</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/SAGEButtons01.png</link>
+		<wid>500</wid>
+		<hei>500</hei>
+	</image>
+	
+	<image>
+		<title>Button reads, 'Engineering is SO gay!'</title>
+		<grp>SAGE</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/SAGEButtons05.png</link>
+		<wid>500</wid>
+		<hei>500</hei>
+	</image>
+	
+	<image>
+		<title>Flyer for Student Alliance of GLBT Engineers</title>
+		<grp>SAGE</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/MassFlyer.png</link>
+		<wid>647</wid>
+		<hei>500</hei>
+	</image>
+	
+	<image>
+		<title>Flyer for Queer Sex Ed</title>
+		<grp>GSA</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/GSAQueerSexEd04.png</link>
+		<wid>500</wid>
+		<hei>647</hei>
+	</image>
+	
+	<!-- Row 4 -->
+	
+	<image>
+		<title>Flyer for Interview Workshop</title>
+		<grp>SAGE</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/InterviewWorkshopWeb.png</link>
+		<wid>500</wid>
+		<hei>647</hei>
+	</image>
+	
+	<image>
+		<title>Flyer for Drag Show</title>
+		<grp>GSA</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/GSADragShow02.png</link>
+		<wid>500</wid>
+		<hei>647</hei>
+	</image>
+	
+	<image>
+		<title>Flyer for Drag Show</title>
+		<grp>GSA</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/GSADragShow01.png</link>
+		<wid>500</wid>
+		<hei>647</hei>
+	</image>
+	
+	<image>
+		<title>Flyer for Queer Sex Ed</title>
+		<grp>GSA</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/GSAQueerSexEd01.png</link>
+		<wid>500</wid>
+		<hei>647</hei>
+	</image>
+	
+	<image>
+		<title>Flyer for Queer Sex Ed</title>
+		<grp>GSA</grp>
+		<link>http://i292.photobucket.com/albums/mm1/pevargas90/Resume/GSAQueerSexEd02.png</link>
+		<wid>500</wid>
+		<hei>647</hei>
+	</image>
+
+</gallery>
