@@ -110,6 +110,12 @@ body,
   transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
 }
 
+/**/
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid black;
+} 
+
 /* Drawer Effect */
 .drawer.container {
   -webkit-perspective: 1500px;
