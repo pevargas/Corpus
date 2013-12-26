@@ -1,0 +1,145 @@
+/* flat.css 
+ * Patrick E. Vargas
+ * www.vargascorpus.com
+ *
+ * References:
+ *   Sidebar Menu Effect by Codrops
+ *   http://www.codrops.com
+ *   Licensed under the MIT license.
+ *   http://www.opensource.org/licenses/mit-license.php
+ */
+
+*,
+*:after,
+*::before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #444;
+  background-image: url( 'logo-overlay.png' );
+  font-family: helvetica;
+  margin: 0;
+}
+
+html,
+body,
+.container,
+.pusher,
+.content {
+  height: 100%;
+}
+
+.content {
+  overflow-y: scroll;
+  background: #f3efe0;
+}
+
+.content,
+.content-inner {
+  position: relative;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.pusher {
+  position: relative;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.pusher::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0,0,0,0.2);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+.menu-open .pusher::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  visibility: hidden;
+  width: 300px;
+  height: 100%;
+  background: #48a770;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menu::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  content: '';
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.menu-open .menu::after {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* Drawer Effect */
+.drawer.container {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+}
+
+.drawer .pusher {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.drawer.menu-open .pusher {
+  -webkit-transform: translate3d(0, 0, -300px);
+  transform: translate3d(0, 0, -300px);
+}
+
+.drawer.menu {
+  opacity: 1;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.drawer.menu-open .drawer.menu {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.drawer.menu::after {
+  display: none;
+}
