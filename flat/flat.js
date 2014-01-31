@@ -67,7 +67,6 @@ $( function( ) {
     $slide.data( 'postop', position*1000 );
 
     $content.scroll( function( ) {
-      console.debug( );
       var yPos = -( $content.scrollTop( ) / $slide.data( 'speed' ) ) + 0.125*position*1000 - 50;
       var coords = '50% ' + yPos + 'px';
       $slide.css({ 'background-position': coords });
@@ -80,8 +79,6 @@ $( function( ) {
       e.stopPropagation( );
 
       var $anchor = $( this );
-      console.debug( $( $anchor.data( 'target' ) ).offset( ) );
-
       $content.animate({
         scrollTop: $( $anchor.data( 'target' ) ).data( 'postop' )
       }, 2000,'easeInOutExpo');
