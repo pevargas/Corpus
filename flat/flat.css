@@ -9,18 +9,21 @@
  *   http://www.opensource.org/licenses/mit-license.php
  */
 
+.blue { color: #00A5C9; }
+
 *,
 *:after,
 *::before {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: #444;
   background-image: url( 'logo-overlay.png' );
   font-family: helvetica;
-  margin: 0;
 }
 
 html,
@@ -84,7 +87,7 @@ body,
   visibility: hidden;
   width: 300px;
   height: 100%;
-  background: #48a770;
+  background: #00A5C9;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -99,7 +102,8 @@ body,
   content: '';
   opacity: 1;
   -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -moz-transition:    opacity 0.5s;
+  transition:         opacity 0.5s;
 }
 
 .menu-open .menu::after {
@@ -107,14 +111,84 @@ body,
   height: 0;
   opacity: 0;
   -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  -moz-transition:    opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition:         opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+#drawer menu {
+  list-style: none;
+}
+#drawer menu li {
+  position: relative;
 }
 
-/**/
-.navbar {
+#drawer menu a:link
+#drawer menu a:visited, #drawer menu a:hover, #drawer menu a:active {
+}
+
+#drawer menu a {
+  /*text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
   width: 100%;
-  border-bottom: 1px solid black;
-} 
+  height: 40px;*/
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1em 1em 1em 1.2em;
+  -webkit-transition: background 0.3s, box-shadow 0.3s;
+  -moz-transition:    background 0.3s, box-shadow 0.3s;
+  transition:         background 0.3s, box-shadow 0.3s;
+}
+
+#drawer menu a:hover {
+  -webkit-box-shadow: inset 0 0 40px #333;
+  -moz-box-shadow:    inset 0 0 40px #333;
+  box-shadow:         inset 0 0 40px #333;
+}
+
+/* Navigation */
+#navbar {
+  position:  fixed;
+  display:   block;
+  z-index:   10;
+  background-color: rgba( 0, 0, 0, 0.8 );
+  color:     white;
+  width:     100%;
+  height:    40px;
+}
+
+#navbar menu {
+  float: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar menu li {
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+  float: left;
+  padding: 10px 30px;
+  margin: 0px 10px;
+}
+
+#drawer-switch {
+  width:     40px;
+  height:    40px;
+  color:     transparent;
+  display:   inline-block;
+  float:     left;
+  cursor:    pointer;
+  border-right: 1px solid white;
+}
+
+.i-menu {
+  background-image:    url( 'img/icons.png' );
+  background-size:     500px 500px;
+  background-position: 0px 0px;
+  background-repeat:   no-repeat;
+}
 
 /* Drawer Effect */
 .drawer.container {
@@ -148,4 +222,62 @@ body,
 
 .drawer.menu::after {
   display: none;
+}
+
+/* PARALLAX */
+#home { 
+  background-image: url( 'img/vargasp-victoria-island-canada.jpg' );
+}
+#resume { 
+  background-image: url( 'img/vargasp-cash-regiester-building-denver.jpg' );
+}
+#projects {
+  background-image: url( 'img/vargasp-carousel-denver.jpg' );
+}
+#design {
+  background-image: url( 'img/vargasp-lake-champlain-vermont.jpg' );
+}
+#music {
+  background-image: url( 'img/vargasp-manitou-springs-colorado.jpg' );
+}
+#tam {
+  background-image: url( 'img/vargasp-flatiron-boulder.jpg' );
+}
+#links {
+  background-image: url( 'img/vargasp-bridge-idaho.jpg' );
+}
+.slide {
+  width: 100%; 
+  height: 1000px;
+  margin: 0 auto; 
+  padding: 15pt;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative; 
+  box-shadow: 0 0 50px rgba( 0, 0, 0, 0.9 );
+  color: black;
+}
+
+.content-inner {
+  margin: 0 auto;
+}
+
+.slide div {
+  background-color: rgba( 250, 250, 250, 0.9 );
+  display:  block;
+  /*width:    50%;*/
+  width:    30%;
+  /*margin: 15pt auto;*/
+  padding:  30pt;
+  position: relative;
+  top:      50pt;
+}
+.slide:nth-child(odd) div {
+  left:  10%;
+  float: left;
+}
+.slide:nth-child(even) div {
+  right: 10%;
+  float: right;
 }
