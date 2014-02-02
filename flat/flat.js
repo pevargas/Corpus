@@ -67,6 +67,46 @@ $( function( ) {
     $slide.data( 'postop', position*1000 );
 
     $content.scroll( function( ) {
+      var scrollTop = $content.scrollTop( );
+      
+      $( "#navbar menu li ").removeClass( 'on' );
+
+      switch ( Math.floor( scrollTop/1000 ) ) {
+        case 0:
+          $( "#iuser" ).addClass( 'on' );
+          break;
+        case 1: 
+          $( "#idocument" ).addClass( 'on' );
+          break;
+        case 2: 
+          $( "#iconsole " ).addClass( 'on' );
+          break;
+        case 3: 
+          $( "#igraph" ).addClass( 'on' );
+          break;
+        case 4: 
+          $( "#irecord" ).addClass( 'on' );
+          break;
+        case 5: 
+          $( "#itam" ).addClass( 'on' );
+          break;
+        case 6: 
+          $( "#ilinks" ).addClass( 'on' );
+          break;
+      }
+ //      $(window).scroll(function(){
+ //  var winTop = $(window).scrollTop(),
+ //      bodyHt = $(document).height(),
+ //      vpHt = $(window).height() + edgeMargin;  // viewport height + margin
+ //  $.each( contentTop, function(i,loc){
+ //   if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
+ //    $('#sidemenu li')
+ //     .removeClass('selected')
+ //     .eq(i).addClass('selected');
+ //   }
+ //  })
+ // })
+
       var yPos = -( $content.scrollTop( ) / $slide.data( 'speed' ) ) + 0.125*position*1000 - 50;
       var coords = '50% ' + yPos + 'px';
       $slide.css({ 'background-position': coords });
