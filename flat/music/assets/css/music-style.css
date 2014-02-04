@@ -1,0 +1,111 @@
+/*  File: base-style.css
+*  Style Guide for Patrick E. Vargas (patrick.vargas@colorado.edu) 
+*/
+
+/*  Color Scheme: Asprin C (https://kuler.adobe.com/Aspirin-C-color-theme-251864/) */
+@darkest: #225378;
+@background: #1695A3;
+@foreground: #ACF0F2;
+@lightest: #F3FFE2;
+@accent: #EB7F00;
+
+/* Main Style */
+body { 
+  padding: 0;        margin: 0;
+  font-size:         12pt;
+  line-height:       24pt;
+  background-color:  @background;
+  color:             @lightest;
+  font-family:       'Righteous', sans-serif;
+}
+
+.glad { width: 1024px; margin: 0 auto; }
+
+#main {
+  background-color: @lightest;
+  color:            @darkest;
+  padding:          1em;
+  margin:           3em auto;
+  z-index:          50;
+  .rotate;
+  .shadow;
+}
+
+/* Basic Tab Definitions BEGIN */
+h1 { font-family: 'Fascinate'; font-size: 3em; text-align: center; color: @accent; }
+h2 { font-family: 'Fascinate'; color: @background; }
+a {  
+  &, &:link, &:visited, 
+  &:hover, &:active { text-decoration: none; }
+
+  &:link    { color: fade(@accent, 75%); }
+  &:visited { color: fade(@accent, 50%); }
+  &:hover   { color:      @accent;       }
+  &:active  { color: fade(@accent, 25%); }
+}
+/* Basic Tab Definitions END */
+
+/* Mixins BEGIN */
+.rotate (@angle: -0.5deg) {
+  -webkit-transform: rotate(@angle);
+  -moz-transform:    rotate(@angle);
+  -ms-transform:     rotate(@angle);
+  -o-transform:      rotate(@angle);
+  transform:         rotate(@angle);
+}
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px @darkest;
+  -moz-box-shadow:    3px 3px 5px 6px @darkest;
+  box-shadow:         3px 3px 5px 6px @darkest;
+}
+/* Mixins END */
+
+/* Breadcrumbs && Footer BEGIN */
+#crumbs, footer { 
+  background-color: lighten(@background, 10%); 
+  width:            100%; 
+  clear:            both;
+  position:         fixed;
+  display:          block;
+  z-index:          100;
+  ul {
+    margin: 0; padding: 0;
+    list-style: none; 
+    li { 
+      display: inline;
+      &:before { margin: 0 0.5em; color: @accent; }
+      &:first-child:before { content: ''; margin: 0;}
+    }
+    a {
+      &:link    { color: fade(@lightest, 75%); }
+      &:visited { color: fade(@lightest, 50%); }
+      &:hover   { color:      @lightest;       }
+      &:active  { color: fade(@lightest, 25%); }
+    }
+  }
+}
+#crumbs { 
+  top: 0;
+  ul li:before { content: '\003e'; }
+}
+footer {
+  bottom: 0;
+  ul li:before  { content: '\2666'; }
+}
+/* Breadcrumbs && Footer END */
+
+/* Imported fonts courtesy of Google. */
+/* Main Font */
+@font-face {
+  font-family:  'Righteous';
+  font-style:   normal;
+  font-weight:  400;
+  src: local('Righteous'), local('Righteous-Regular'), url(http://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+/* Title Font */
+@font-face {
+  font-family: 'Fascinate';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fascinate'), local('Fascinate-Regular'), url(http://themes.googleusercontent.com/static/fonts/fascinate/v2/NnlsYos1mCtA9prs2JfnBbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}

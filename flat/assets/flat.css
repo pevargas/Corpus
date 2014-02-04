@@ -21,7 +21,7 @@
 
 body {
   background-color: #444;
-  background-image: url( 'assets/img/logo-overlay.png' );
+  background-image: url( 'logo-overlay.png' );
   font-family: helvetica;
   font-size: 13pt;
 }
@@ -243,25 +243,25 @@ nav h2 a:hover, nav h2 a:active {
 
 /* PARALLAX */
 #home { 
-  background-image: url( 'assets/img/vargasp-victoria-island-canada.jpg' );
+  background-image: url( 'img/vargasp-victoria-island-canada.jpg' );
 }
 #resume { 
-  background-image: url( 'assets/img/vargasp-cash-regiester-building-denver.jpg' );
+  background-image: url( 'img/vargasp-cash-regiester-building-denver.jpg' );
 }
 #projects {
-  background-image: url( 'assets/img/vargasp-carousel-denver.jpg' );
+  background-image: url( 'img/vargasp-carousel-denver.jpg' );
 }
 #design {
-  background-image: url( 'assets/img/vargasp-lake-champlain-vermont.jpg' );
+  background-image: url( 'img/vargasp-lake-champlain-vermont.jpg' );
 }
 #music {
-  background-image: url( 'assets/img/vargasp-manitou-springs-colorado.jpg' );
+  background-image: url( 'img/vargasp-manitou-springs-colorado.jpg' );
 }
 #tam {
-  background-image: url( 'assets/img/vargasp-flatiron-boulder.jpg' );
+  background-image: url( 'img/vargasp-flatiron-boulder.jpg' );
 }
 #links {
-  background-image: url( 'assets/img/vargasp-bridge-idaho.jpg' );
+  background-image: url( 'img/vargasp-bridge-idaho.jpg' );
 }
 
 .slide h2 {
