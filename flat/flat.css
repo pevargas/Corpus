@@ -23,12 +23,20 @@ body {
   background-color: #444;
   background-image: url( 'logo-overlay.png' );
   font-family: helvetica;
+  font-size: 13pt;
 }
 
 html, body, .container,
 .pusher, .content {
   height: 100%;
 }
+
+h1, h2, h3, h4 {
+  /*font-family: Chango;*/
+  text-transform: uppercase;
+}
+h1 { font-size: 20pt; }
+h2 { font-size: 15pt; }
 
 .content {
   overflow-y: scroll;
@@ -83,7 +91,7 @@ html, body, .container,
   transition:         all 0.5s;
 }
 
-.menu::after {
+.menu:after {
   position:    absolute;
   top: 0;      right: 0;
   width: 100%; height: 100%;
@@ -94,7 +102,7 @@ html, body, .container,
   transition:         opacity 0.5s;
 }
 
-.menu-open .menu::after {
+.menu-open .menu:after {
   width: 0; height: 0;
   opacity:  0;
   -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
@@ -106,6 +114,7 @@ html, body, .container,
 }
 #drawer menu li {
   position: relative;
+  margin: 1em 0em;
 }
 
 #drawer menu a:link
@@ -116,7 +125,8 @@ html, body, .container,
   text-decoration: none;
   color:   white;
   display: block;
-  padding: 1em 1em 1em 1.2em;
+  padding: 1em;
+
   -webkit-transition: background 0.3s, box-shadow 0.3s;
   transition:         background 0.3s, box-shadow 0.3s;
 }
@@ -124,6 +134,13 @@ html, body, .container,
 #drawer menu a:hover {
   -webkit-box-shadow: inset 0 0 40px #333;
   box-shadow:         inset 0 0 40px #333;
+}
+
+#drawer .ipvlogo {
+  width: 120px; height: 120px;
+  display: block;
+  margin: 1em center;
+  background-size: 100%;
 }
 
 /* Navigation */
@@ -154,22 +171,41 @@ html, body, .container,
   background-color: #00A5C9;
 }
 
-.imenu, #iuser, #idocument, #iconsole, #igraph,
-#irecord, #itam, #ilinks, #ipvlogo {
+menu a i {
+  width: 60px; height: 60px;
+  display: inline-block; margin: -25px 0px -25px -10px;
+}
+
+.imenu, .iuser, .idocument, .iconsole, .igraph,
+.irecord, .itam, .ilinks, .ipvlogo, 
+#imenu, #iuser, #idocument, #iconsole, #igraph,
+#irecord, #itam, #ilinks, #ipvlogo, i {
   background-image:  url( 'img/icons.png' );
   background-size:   360px;
   background-repeat: no-repeat;
 }
 
 .imenu     { background-position:    0px   0px; }
-#irecord   { background-position:  -60px   0px; }
-#iuser     { background-position: -120px   0px; }
-#idocument { background-position: -180px   0px; }
-#iconsole  { background-position: -240px   0px; }
-#igraph    { background-position: -300px   0px; }
-#itam      { background-position:    0px -60px; }
-#ilinks    { background-position:  -60px -60px; }
-#ipvlogo   { background-position: -120px -60px; }
+.irecord  , #irecord   { background-position:  -60px   0px; }
+.iuser    , #iuser     { background-position: -120px   0px; }
+.idocument, #idocument { background-position: -180px   0px; }
+.iconsole , #iconsole  { background-position: -240px   0px; }
+.igraph   , #igraph    { background-position: -300px   0px; }
+.itam     , #itam      { background-position:    0px -60px; }
+.ilinks   , #ilinks    { background-position:  -60px -60px; }
+.ipvlogo  , #ipvlogo   { background-position: -120px -60px; }
+
+nav h2 {
+  /*height: 60px;*/
+}
+nav h2 a, nav h2 a:visited, 
+nav h2 a:hover, nav h2 a:active {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  padding: 1em;
+  display: block;
+}
 
 /* Drawer Effect */
 .drawer.container {
@@ -201,7 +237,7 @@ html, body, .container,
   transform:          translate3d(0, 0, 0);
 }
 
-.drawer.menu::after {
+.drawer.menu:after {
   display: none;
 }
 
@@ -227,6 +263,19 @@ html, body, .container,
 #links {
   background-image: url( 'img/vargasp-bridge-idaho.jpg' );
 }
+
+.slide h2 {
+  text-align: center;
+}
+
+#resume h2   { font-size: 59pt; }
+#projects h2 { font-size: 18pt; }
+#design h2   { font-size: 34pt; }
+#music h2    { font-size: 26pt; }
+#tam h2      { font-size: 34.8pt; }
+#links h2    { font-size: inherit; }
+
+
 .slide {
   width: 100%;    height: 1000px;
   margin: 0 auto; padding: 15pt;
@@ -242,19 +291,58 @@ html, body, .container,
   margin: 0 auto;
 }
 
-.slide div {
-  background-color: rgba( 250, 250, 250, 0.9 );
-  display:  block;
-  width:    30%;
-  padding:  30pt;
-  position: relative;
-  top:      38.196601125%;
+.slide div, .slide header, .slide a {
+  /*background-color: rgba( 250, 250, 250, 0.9 );*/
+  background-color: rgba( 0, 165, 201, 0.9 );
+  color:            white;
+  display:          block;
+  width:            30%;
+  padding:          30pt;
+  position:         relative;
+  top:              38.196601125%;
+  text-decoration:  none;
 }
-.slide:nth-child(odd) div {
+.slide:nth-child(odd) div, .slide:nth-child(odd) a {
   left:  10%;
   float: left;
 }
-.slide:nth-child(even) div {
+.slide:nth-child(even) div, .slide:nth-child(even) a {
   right: 10%;
   float: right;
+}
+
+.slide header {
+  width: 80%;
+  margin: 0 auto;
+  top: 25%;
+  /*display: block;*/
+  /*position: relatvie;*/
+}
+.slide header h1 {
+  font-size: 75pt;
+}
+header h2 {
+  font-size: 20pt;
+  text-align: center;
+}
+header h2 ul {
+  list-style: none;
+}
+header h2 ul li {
+  display: inline;
+}
+header h2 ul li:before {
+  content: '\2666'; margin: 0 0.9em; color: white;
+}
+header h2 ul li:first-child:before {
+  content: ''; margin: 0;
+}
+
+/* Google Fonts */
+
+@font-face {
+  font-family: 'Chango';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Chango Regular'), local('Chango-Regular'), url(http://themes.googleusercontent.com/static/fonts/chango/v3/TBvknwF6LJMMCJ0ydvSzsOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
 }
