@@ -94,6 +94,13 @@ $( function( ) {
           $( "#ilinks" ).addClass( 'on' );
           break;
       }
+
+      if ( Math.floor( scrollTop/1000 ) >= 1 ) {
+        $( "#crumbs" ).show( );
+      }
+      else {
+        $( "#crumbs" ).hide( );
+      }
  //      $(window).scroll(function(){
  //  var winTop = $(window).scrollTop(),
  //      bodyHt = $(document).height(),

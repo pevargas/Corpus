@@ -21,7 +21,7 @@
 
 body {
   background-color: #444;
-  background-image: url( 'logo-overlay.png' );
+  background-image: url( 'img/logo-overlay.png' );
   font-family: helvetica;
   font-size: 13pt;
 }
@@ -246,7 +246,7 @@ nav h2 a:hover, nav h2 a:active {
   background-image: url( 'img/vargasp-victoria-island-canada.jpg' );
 }
 #resume { 
-  background-image: url( 'img/vargasp-cash-regiester-building-denver.jpg' );
+  background-image: url( 'img/vargasp-cash-register-building-denver.jpg' );
 }
 #projects {
   background-image: url( 'img/vargasp-carousel-denver.jpg' );
@@ -301,6 +301,7 @@ nav h2 a:hover, nav h2 a:active {
   position:         relative;
   top:              38.196601125%;
   text-decoration:  none;
+  transition:       all 0.5s;
 }
 .slide:nth-child(odd) div, .slide:nth-child(odd) a {
   left:  10%;
@@ -311,19 +312,34 @@ nav h2 a:hover, nav h2 a:active {
   float: right;
 }
 
+.slide a:hover {
+  padding: 35pt 25pt 25pt 35pt;
+  transition: all 0.2s;
+  -webkit-box-shadow: inset 5px 5px 20px #333;
+  -moz-box-shadow:    inset 5px 5px 20px #333;
+  box-shadow:         inset 5px 5px 20px #333;
+}
+
+/*.slide a:after {
+  width: 5em; height: 5em;
+  border-left:   5em solid blue;
+  border-top:    5em solid transparent;
+  border-bottom: 5em solid transparent;
+  position: relative;
+  display: block;
+  right: 1em;
+}*/
+
 .slide header {
   width: 80%;
   margin: 0 auto;
   top: 25%;
-  /*display: block;*/
-  /*position: relatvie;*/
 }
 .slide header h1 {
   font-size: 75pt;
 }
 header h2 {
-  font-size: 20pt;
-  text-align: center;
+  font-size: 19.9pt;
 }
 header h2 ul {
   list-style: none;
@@ -338,11 +354,15 @@ header h2 ul li:first-child:before {
   content: ''; margin: 0;
 }
 
-/* Google Fonts */
-
-@font-face {
-  font-family: 'Chango';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Chango Regular'), local('Chango-Regular'), url(http://themes.googleusercontent.com/static/fonts/chango/v3/TBvknwF6LJMMCJ0ydvSzsOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+/* Crumbs */
+#crumbs {
+  list-style: none;
+  padding: 15pt;
+  font-size: 15pt;
+  float: left;
+  display: none;
+  transition: all 0.5s;
+}
+#crumbs li {
+  display: inline;
 }
