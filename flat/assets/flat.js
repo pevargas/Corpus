@@ -9,23 +9,22 @@
 //   http://www.opensource.org/licenses/mit-license.php
 //
 
-var SidebarMenuEffects = ( function( ) {
-
-  function hasParentClass( e, classname ) {
+var vargas = {
+  hasParentClass: function( e, classname ) {
     if ( e === document ) return false;
     if ( e.classList.contains( classname ) ) {
       return true;
     }
-    return e.parentNode && hasParentClass( e.parentNode, classname ); 
-  }
+    return e.parentNode && vargas.hasParentClass( e.parentNode, classname ); 
+  },
 
-  function init() {
+  SidebarMenuEffects: function( ) {
     var container = document.getElementById( 'container' );
     var resetMenu = function() { 
       container.classList.remove( 'menu-open' );
     }
     var bodyClickFn = function(evt) {
-      if( !hasParentClass( evt.target, 'menu' ) ) {
+      if( !vargas.hasParentClass( evt.target, 'menu' ) ) {
         resetMenu();
         document.removeEventListener( evt.type, bodyClickFn );
       }
@@ -48,80 +47,47 @@ var SidebarMenuEffects = ( function( ) {
       // Listen for an anti-click
       document.addEventListener( 'click', bodyClickFn );
     });
+  },
 
-  }
+  parallax: function ( index ) {
+    var $content = $( '.content' );
 
-  init( );
-  
-})( );
+    $( '.slide' ).each( function ( position ) {
+      var $slide = $( this );
+      $slide.data( 'postop', position*1000 );
 
-$( function( ) {
+      $content.scroll( function( ) {
+        var scrollTop = $content.scrollTop( );
+        var yPos = -( $content.scrollTop( ) / $slide.data( 'speed' ) ) + 0.125*position*1000 - 50;
+        var coords = '50% ' + yPos + 'px';
+        $slide.css({ 'background-position': coords });
 
-  /* Parallax Movement */
-  var $content = $( '.content' );
+        if ( index ) {
+          $( "#navbar menu li ").removeClass( 'on' );
 
-  $( '.slide' ).each( function ( position ) {
-    var $slide = $( this );
-    // console.debug( $slide.position( ).top );
-    // $slide.data.postop = position*1000;
-    $slide.data( 'postop', position*1000 );
+          switch ( Math.floor( scrollTop/1000 ) ) {
+            case 0: $( "#iuser" ).addClass( 'on' );     break;
+            case 1: $( "#idocument" ).addClass( 'on' ); break;
+            case 2: $( "#iconsole " ).addClass( 'on' ); break;
+            case 3: $( "#igraph" ).addClass( 'on' );    break;
+            case 4: $( "#irecord" ).addClass( 'on' );   break;
+            case 5: $( "#itam" ).addClass( 'on' );      break;
+            case 6: $( "#ilinks" ).addClass( 'on' );    break;
+          }
 
-    $content.scroll( function( ) {
-      var scrollTop = $content.scrollTop( );
-      
-      $( "#navbar menu li ").removeClass( 'on' );
+          if ( Math.floor( scrollTop/1000 ) >= 1 ) { $( "#crumbs" ).show( ); }
+          else                                     { $( "#crumbs" ).hide( ); }
+        }
+      });
+    });    
+  },
 
-      switch ( Math.floor( scrollTop/1000 ) ) {
-        case 0:
-          $( "#iuser" ).addClass( 'on' );
-          break;
-        case 1: 
-          $( "#idocument" ).addClass( 'on' );
-          break;
-        case 2: 
-          $( "#iconsole " ).addClass( 'on' );
-          break;
-        case 3: 
-          $( "#igraph" ).addClass( 'on' );
-          break;
-        case 4: 
-          $( "#irecord" ).addClass( 'on' );
-          break;
-        case 5: 
-          $( "#itam" ).addClass( 'on' );
-          break;
-        case 6: 
-          $( "#ilinks" ).addClass( 'on' );
-          break;
-      }
+  index: function( ) {
+    var $content = $( '.content' );
+    var scrollTop = $content.scrollTop( );
 
-      if ( Math.floor( scrollTop/1000 ) >= 1 ) {
-        $( "#crumbs" ).show( );
-      }
-      else {
-        $( "#crumbs" ).hide( );
-      }
- //      $(window).scroll(function(){
- //  var winTop = $(window).scrollTop(),
- //      bodyHt = $(document).height(),
- //      vpHt = $(window).height() + edgeMargin;  // viewport height + margin
- //  $.each( contentTop, function(i,loc){
- //   if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
- //    $('#sidemenu li')
- //     .removeClass('selected')
- //     .eq(i).addClass('selected');
- //   }
- //  })
- // })
-
-      var yPos = -( $content.scrollTop( ) / $slide.data( 'speed' ) ) + 0.125*position*1000 - 50;
-      var coords = '50% ' + yPos + 'px';
-      $slide.css({ 'background-position': coords });
-    });
-  });
-
-  /* Navigation Bar  */
-  $( '#navbar menu li' ).bind( 'click', function( e ) {
+    /* Navigation Bar  */
+    $( '#navbar menu li' ).bind( 'click', function( e ) {
       e.preventDefault( );
       e.stopPropagation( );
 
@@ -129,7 +95,6 @@ $( function( ) {
       $content.animate({
         scrollTop: $( $anchor.data( 'target' ) ).data( 'postop' )
       }, 2000,'easeInOutExpo');
-  });
-});
-
-  
+    });
+  }
+};
