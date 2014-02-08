@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+
+<!-- META -->
+<meta charset="utf-8">
+<title>Patrick E. Vargas</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/flat.css">
+<style>
+#main {
+  background-image: url( '../assets/img/vargasp-open-space-estes-park.jpg' );
+}
+img { width: 20%; }
+</style>
+</head>
+<body>
+<div id="container" class="container">
+
+  <nav class="menu drawer" id="drawer">
+    <h2><a href="..">Patrick E. Vargas</a></h2>
+    <menu>
+      <li><a href="../about"><i class="iuser"></i>About PEV</a></li>
+      <li><a href="../resume"><i class="idocument"></i>Resume</a></li>
+      <li><a href="../code"><i class="iconsole"></i>Programming Projects</a></li>
+      <li><a href="../design"><i class="igraph"></i>Design Work</a></li>
+      <li><a href="../music"><i class="irecord"></i>Music Portfolio</a></li>
+      <li><a href="../tam"><i class="ilinks"></i><abbr title="Technology, Arts and Media">TAM</abbr> Classes</a></li>
+    </menu>
+    <i class="ipvlogo"></i>
+  </nav>
+
+  <!-- content push wrapper -->
+  <div class="pusher">
+    <div class="content"><!-- this is the wrapper for the content -->
+      <div id="navbar">
+        <a id="drawer-switch" class="imenu">Menu</a>
+
+        <ul id="crumbs">
+          <li><a href="..">Patrick E. Vargas</a></li>
+          <li>Design Work</li>
+        </ul>
+
+        <menu>
+          <li id="igraph">Design Work</li>
+        </menu>
+      </div>
+
+      <article class="content-inner" id="main"><!-- extra div for emulating position:fixed of the menu -->
+        <div id="text">
+          <header>
+            <h1>Design Work</h1>
+          </header>
+
+          <section id="posters" class="des">
+            <h3>Posters</h3>
+            <p>
+              A few posters I had made up with some quotes I rather admire. Created using Inkscape, I felt the need to practice my graphic design skills. <span class="help">Click each image to enlarge and then click anywhere to diminish.</span>
+            </p>
+            <div class="item">
+              <img src="img/poster01web.png" alt="">
+              <img src="img/poster02web.png" alt="">
+            </div>
+          </section>
+
+          <section id="flyers" class="des">
+            <h3>Flyers</h3>
+            <p>Below is some of my design work for various organizations. <span class="help">Click each image to enlarge and then click anywhere to diminish.</span>
+            </p>
+            <div class="item">
+              <img src="img/GSADragShow02.png" alt="">
+              <img src="img/GSAQueerSexEd01.png" alt="">
+              <img src="img/GSAQueerSexEd02.png" alt="">
+              <img src="img/InterviewWorkshopWeb.png" alt="">
+              <img src="img/SAGEFlyers02.png" alt="">
+            </div>
+            <div class="item">
+              <img src="img/KnittingManHandBill.png" alt="">
+              <img src="img/KnittingManLogo.png" id="knitting" alt="">
+            </div>
+          </section>
+        </div>
+      </article><!-- /content-inner -->
+    </div><!-- /content -->
+  </div><!-- /pusher -->
+</div><!-- /container -->
+
+
+<!-- JS -->
+
+<!-- jQuery Library provided by Google -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+<script src="../assets/flat.js"></script>
+<script>
+$(function( ) {
+  vargas.SidebarMenuEffects( );
+});
+</script>
+</body>
+</html>
