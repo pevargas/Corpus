@@ -8,10 +8,7 @@
 <!-- CSS -->
 <link rel="stylesheet" href="../assets/flat.css">
 <style>
-#main {
-  background-image: url( '../assets/img/vargasp-open-space-estes-park.jpg' );
-}
-img { width: 20%; }
+#main { background-image: url( '../assets/img/vargasp-open-space-estes-park.jpg' ); }
 </style>
 </head>
 <body>
@@ -52,32 +49,24 @@ img { width: 20%; }
             <h1>Design Work</h1>
           </header>
 
-          <section id="posters" class="des">
+          <section>
             <h3>Posters</h3>
             <p>
               A few posters I had made up with some quotes I rather admire. Created using Inkscape, I felt the need to practice my graphic design skills. <span class="help">Click each image to enlarge and then click anywhere to diminish.</span>
             </p>
-            <div class="item">
-              <img src="img/poster01web.png" alt="">
-              <img src="img/poster02web.png" alt="">
-            </div>
-          </section>
+            <img src="img/poster01web.png" alt="">
+            <img src="img/poster02web.png" alt="">
 
-          <section id="flyers" class="des">
             <h3>Flyers</h3>
             <p>Below is some of my design work for various organizations. <span class="help">Click each image to enlarge and then click anywhere to diminish.</span>
             </p>
-            <div class="item">
-              <img src="img/GSADragShow02.png" alt="">
-              <img src="img/GSAQueerSexEd01.png" alt="">
-              <img src="img/GSAQueerSexEd02.png" alt="">
-              <img src="img/InterviewWorkshopWeb.png" alt="">
-              <img src="img/SAGEFlyers02.png" alt="">
-            </div>
-            <div class="item">
-              <img src="img/KnittingManHandBill.png" alt="">
-              <img src="img/KnittingManLogo.png" id="knitting" alt="">
-            </div>
+            <img src="img/GSADragShow02.png" alt="">
+            <img src="img/GSAQueerSexEd01.png" alt="">
+            <img src="img/GSAQueerSexEd02.png" alt="">
+            <img src="img/InterviewWorkshopWeb.png" alt="">
+            <img src="img/SAGEFlyers02.png" alt="">
+            <img src="img/KnittingManHandBill.png" alt="">
+            <img src="img/KnittingManLogo.png" id="knitting" alt="">
           </section>
         </div>
       </article><!-- /content-inner -->
@@ -85,8 +74,12 @@ img { width: 20%; }
   </div><!-- /pusher -->
 </div><!-- /container -->
 
-
-<!-- JS -->
+<!-- Lightbox -->
+<div id="lightbox">
+  <p id="inst">Click to Close</p>
+  <div id="boxcontent">
+  </div>
+</div> <!-- /lightbox -->
 
 <!-- jQuery Library provided by Google -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
@@ -96,6 +89,7 @@ img { width: 20%; }
 <script>
 $(function( ) {
   vargas.SidebarMenuEffects( );
+  vargas.lightbox( );
 });
 </script>
 </body>

@@ -96,5 +96,43 @@ var vargas = {
         scrollTop: $( $anchor.data( 'target' ) ).data( 'postop' )
       }, 2000,'easeInOutExpo');
     });
+  },
+
+  lightbox: function( ) {
+    /* Light Box BEGIN */
+    $( '#lightbox' ).click( function ( ) {
+      $(this).fadeOut('slow');
+    });
+
+    $( 'img' ).each( function( ) {
+      var src    = $( this ).attr( 'src' );
+      var height, width;
+
+      $( '<img>' ) // Make in memory copy of image to avoid css issues
+        .attr( 'src', src )
+        .load( function( ) {
+          width  = this.width;   // Note: $(this).width() will not
+          height = this.height;  // work for in memory images.
+          if ( $( window ).height( ) < height ) {
+            // width / height = x / winheight
+            var ratio = width / height;
+            height    = Math.floor( $( window ).height( ) * 0.9 );
+            width     = Math.floor( ratio * height );
+          }
+
+          if ( $( window ).width( ) < width ) {
+            var ratio  = height / width;
+            width      = Math.floor( $( window ).width( ) * 0.9 );
+            height     = Math.floor( ratio * width );
+          }
+
+        });
+      $( this ).click( function ( ) {
+        $( '#boxcontent' ).html( '<img src="' + src + '" height="' + height + '" width="' + width + '">' ).height( height ).width( width );
+
+        // Enter lightbox
+        $( '#lightbox' ).fadeIn( 'slow' );
+      });
+    });
   }
 };
