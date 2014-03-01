@@ -31,106 +31,6 @@ var repo = {
   },
 
   /////////////////////////////////////////////////////////////////////////////
-  // GLBTQRC Buttons
-  "button-glbtq-rc-closets.png" :
-  { 
-    date: "2011-04",
-    text: "Designed buttons for the Gay, Lesbian, Bisexual, Transgender, Queer Resource Center to improve visibility. Button reads, \"Closets are for Clothes\"."
-  },
-  "button-glbtq-rc-diversity.png":
-  {
-    date: "2010-05",
-    text: "Designed buttons for the Gay, Lesbian, Bisexual, Transgender, Queer Resource Center to improve visibility. Button reads, \"Celebrate Diversity!\"."
-  },
-  "button-glbtq-rc-fabulous.png":
-  {
-    date: "2010-05",
-    text: "Designed buttons for the Gay, Lesbian, Bisexual, Transgender, Queer Resource Center to improve visibility. Button reads, \"Gay by Birth, Fabulous by Choice\"."
-  },
-  "button-glbtq-rc-gay-day.png":
-  {
-    date: "2010-05",
-    text: "Designed buttons for the Gay, Lesbian, Bisexual, Transgender, Queer Resource Center to improve visibility. Button reads, \"Have a Gay Day!\" with a smiley face"
-  },
-  "button-glbtq-rc-hate.png":
-  {
-    date: "2010-05",
-    text: "Designed buttons for the Gay, Lesbian, Bisexual, Transgender, Queer Resource Center to improve visibility. Button reads, \"Hate Free Zone\""
-  },
-  "button-glbtq-rc-homophobia.png":
-  {
-    date: "2010-05",
-    text: "Designed buttons for the Gay, Lesbian, Bisexual, Transgender, Queer Resource Center to improve visibility. Button reads, \"Homophobia: That's SO Last Millennium!\""
-    
-  },
-  "button-glbtq-rc-ralhpie-black.png":
-  {
-    date: "2010-05",
-    text: "Designed buttons for the Gay, Lesbian, Bisexual, Transgender, Queer Resource Center to improve visibility. Button depicts CU's mascot, Ralphie, with rainbow colors"
-    
-  },
-  "button-glbtq-rc-ralhpie-white.png":
-  {
-    date: "2010-05",
-    text: "Designed buttons for the Gay, Lesbian, Bisexual, Transgender, Queer Resource Center to improve visibility. Button depicts CU's mascot, Ralphie, with rainbow colors"
-    
-  },
-  "button-glbtq-rc-tolerate.png":
-  {
-    date: "2010-05",
-    text: "Designed buttons for the Gay, Lesbian, Bisexual, Transgender, Queer Resource Center to improve visibility. Button reads, \"Don't Tolerate Intolerance\""
-    
-  },
-
-  /////////////////////////////////////////////////////////////////////////////
-  // SAGE Buttons
-  "button-sage-gear-fabulous-world.png":
-  {
-    date: "2012-02",
-    text: "Designed buttons for the Student Alliance of GLBT Engineers. Button depicts a gear in the background and reads, \"Engineering a more fabulous world!\""
-  },
-  "button-sage-gear-so-gay.png":
-  {
-    date: "2012-02",
-    text: "Designed buttons for the Student Alliance of GLBT Engineers. Button depicts a gear in the background and reads, \"Engineering is SO gay!\""
-  },
-  "button-sage-logo-spelled-out.png":
-  {
-    date: "2012-02",
-    text: "Designed buttons for the Student Alliance of GLBT Engineers. Button depicts the SAGE logo with the initialism spelled out below it."
-  },
-  "button-sage-logo-stacked.png":
-  {
-    date: "2012-02",
-    text: "Designed buttons for the Student Alliance of GLBT Engineers. Button depicts the SAGE logo with the initialism spelled out next to it"
-  },
-  "button-sage-logo.png":
-  {
-    date: "2012-02",
-    text: "Designed buttons for the Student Alliance of GLBT Engineers. Button depicts the SAGE logo"
-  },
-  "button-sage-ralphie-fabulous-world.png":
-  {
-    date: "2012-02",
-    text: "Designed buttons for the Student Alliance of GLBT Engineers. Button depicts the SAGE Ralphie logo and reads, \"Engineering a more fabulous world!\""
-  },
-  "button-sage-ralphie-so-gay.png":
-  {
-    date: "2012-02",
-    text: "Designed buttons for the Student Alliance of GLBT Engineers. Button depicts the SAGE Ralphie logo and reads, \"Engineering is SO gay!\""
-  },
-  "button-sage-ralphie-tramp-stamp.png":
-  {
-    date: "2012-02",
-    text: "Designed buttons for the Student Alliance of GLBT Engineers. Button depicts the SAGE Ralphie logo with the SAGE logo"
-  },
-  "button-sage-ralphie.png":
-  {
-    date: "2012-02",
-    text: "Designed buttons for the Student Alliance of GLBT Engineers. Button depicts the SAGE Ralphie logo"
-  },
-
-  /////////////////////////////////////////////////////////////////////////////
   // GSA Flyer
   "flyer-gsa-drag-show-jungle.png":
   {
@@ -221,46 +121,6 @@ var repo = {
   {
     date: "2013-07",
     text: "The poster was a side project while designing my business cards. Poster reads, \"The chief cause of failure and unhappiness is trading what you want most for what you want right now\" by Zig Ziglar"
-  },
-
-  /////////////////////////////////////////////////////////////////////////////
-  // Macbeath PRogram
-  "school-macbeth-cover.png":
-  {
-    date: "2012-07",
-    text: "This program was used for my class, Shakespeare for Non-majors. It is a program for play, \"The Tragedy of Macbeth\""
-  },
-  "school-macbeth-inside.png":
-  {
-    date: "2012-07",
-    text: "This program was used for my class, Shakespeare for Non-majors. It is a program for play, \"The Tragedy of Macbeth\""
-  },
-
-  /////////////////////////////////////////////////////////////////////////////
-  // Educational Gamelets
-  "gamlet-design-frogger.png":
-  {
-    date: "2012-01",
-    title: "Jurassic Frogger",
-    text: "A dinosaur themed version of the classic Frogger."
-  },
-  "gamlet-design-funky.png":
-  {
-    date: "2012-03",
-    title: "Funky Disco Live",
-    text: "This game demonstrates a Turing Machine called Langton's Ant. This algorithm shows how simple instructions can create complex patterns."
-  },
-  "gamlet-design-robot.png":
-  {
-    date: "2012-02",
-    title: "Fix ALL the Robots!",
-    text: "This game will (hopefully) allow the user to understand the idea of swarm intelligence and parallel processing."
-  },
-  "gamlet-design-sokoban.png":
-  {
-    date: "2012-01",
-    title: "Ahiru Sokoban",
-    text: "A duck themed version of the popular 1981 game, Sokoban."
   },
 
   /////////////////////////////////////////////////////////////////////////////
@@ -361,24 +221,6 @@ var repo = {
     link: "http://redwood.colorado.edu/vargasp/dm2/proj3/",
     title: "Acrylic Video",
     text: "For the final project I chose to do some video manipulation. I really like the look acrylic makes when stacked on top of each other, creating another image. Video clips from BBC Motion Gallery.<br><br>I interlaced video clips with stock footage to make a mosaic of interesting images. The main reason for this program was to explore video manipulation. I really enjoyed the bit mashing of the different images and found some really interesting techniques along the way. "
-  },
-
-  /////////////////////////////////////////////////////////////////////////////
-  // Websites
-  "website-cu-bookstore.png":
-  {
-    date: "2013-01",
-    text: "Part of my duties as Assistant Web Administrator for the CU Bookstore include styling pages within the website. I also add products to the web, update news items, etc. I've styled a few internal pages as well as the mobile skin."
-  },
-  "website-sage.png":
-  {
-    date: "2012-05",
-    text: "As one of the leaders of SAGE, I developed and designed their new website. I decided on Google Sites to host it so future SAGE leaders will find it easy to maintain."
-  },
-  "website-version01.png":
-  {
-    date: "2010-05",
-    text: "First version of portfolio website."
   }
 
 };
