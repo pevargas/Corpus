@@ -33,7 +33,33 @@ h1             { font-size: 20pt; }
 h2             { font-size: 15pt; margin-top: 1em; }
 h2:first-child { margin-top: 0; }
 a:link, a:visited, a:hover, a:active { color: #f0fcff; text-decoration: none; }
-
+blockquote {
+  padding: 1em;
+}
+blockquote:before, cite:after {
+  font-size:   4em;
+}
+blockquote:before { 
+  content: "\201C";
+  margin-left: -30px;
+  margin-top:  -15px;
+  float: left;
+}
+cite:after { 
+  content: "\201E";
+  margin-right: -40px;
+  margin-top:   -70px;
+  float: right;
+}
+blockquote cite {
+  display: block;
+  float: right;
+  margin: 1em;
+}
+blockquote cite:before {
+  content: "\2014";
+  margin-right: 0.5em;
+}
 /* Content */
 .content       { overflow-y: auto; background: #00A5C9; }
 .content-inner { margin: 0 auto; }
@@ -100,16 +126,15 @@ a:link, a:visited, a:hover, a:active { color: #f0fcff; text-decoration: none; }
 /* Drawer */
 #drawer menu    { list-style: none; }
 #drawer menu li { position: relative; margin: 0em 0em; }
-#drawer menu a, #text section > img, #links a:hover {
+#drawer menu a, #text section img, #links a:hover {
   text-decoration: none;
   display: block;
   padding: 30pt;
   -webkit-transition: all 0.3s;
   transition:         all 0.3s;
 }
-#text section > img { padding: 0; margin: 15pt; }
-
-#drawer menu a:hover, .slide a:hover, #text section > img:hover, #links a:hover {
+#text section img { padding: 0; margin: 15pt; }
+#drawer menu a:hover, .slide a:hover, #text section img:hover, #links a:hover {
   padding: 35pt 25pt 25pt 35pt;
   -webkit-transition: all 0.2s;
   transition:         all 0.2s;
@@ -117,7 +142,7 @@ a:link, a:visited, a:hover, a:active { color: #f0fcff; text-decoration: none; }
   -moz-box-shadow:    inset 5px 5px 20px #333;
   box-shadow:         inset 5px 5px 20px #333;
 }
-#text section > img:hover { padding: 0; margin: 20pt 10pt 10pt 20pt; }
+#text section img:hover { padding: 0; margin: 20pt 10pt 10pt 20pt; }
 
 #drawer .ipvlogo {
   width: 120px; height: 120px;
@@ -152,21 +177,27 @@ menu a i {
 }
 
 .imenu, .iuser, .idocument, .iconsole, .igraph, .irecord, .itam, .ilinks, .ipvlogo, 
-#imenu, #iuser, #idocument, #iconsole, #igraph, #irecord, #itam, #ilinks, #ipvlogo, i {
+#imenu, #iuser, #idocument, #iconsole, #igraph, #irecord, #itam, #ilinks, #ipvlogo, 
+.iemail, .iphone, .igit, .istack, .ilinked, #iemail, #iphone, #igit, #istack, #ilinked, i {
   background-image:  url( 'img/icons.png' );
   background-size:   360px;
   background-repeat: no-repeat;
 }
 
-.imenu,     #imenu     { background-position:    0px   0px; }
-.irecord,   #irecord   { background-position:  -60px   0px; }
-.iuser,     #iuser     { background-position: -120px   0px; }
-.idocument, #idocument { background-position: -180px   0px; }
-.iconsole,  #iconsole  { background-position: -240px   0px; }
-.igraph,    #igraph    { background-position: -300px   0px; }
-.itam,      #itam      { background-position:    0px -60px; }
-.ilinks,    #ilinks    { background-position:  -60px -60px; }
-.ipvlogo,   #ipvlogo   { background-position: -120px -60px; }
+.imenu,     #imenu     { background-position:    0px    0px; }
+.irecord,   #irecord   { background-position:  -60px    0px; }
+.iuser,     #iuser     { background-position: -120px    0px; }
+.idocument, #idocument { background-position: -180px    0px; }
+.iconsole,  #iconsole  { background-position: -240px    0px; }
+.igraph,    #igraph    { background-position: -300px    0px; }
+.itam,      #itam      { background-position:    0px  -60px; }
+.ilinks,    #ilinks    { background-position:  -60px  -60px; }
+.ipvlogo,   #ipvlogo   { background-position: -120px  -60px; }
+.iemail,    #iemail    { background-position: -180px  -60px; }
+.iphone,    #iphone    { background-position: -240px  -60px; }
+.igit,      #igit      { background-position: -300px  -60px; }
+.istack,    #istack    { background-position:    0px -120px; }
+.ilinked,   #ilinked   { background-position:  -60px -120px; }
 
 nav h2 a, nav h2 a:visited, 
 nav h2 a:hover, nav h2 a:active {
@@ -253,17 +284,20 @@ header h2 ul li:first-child::before { content: ''; margin: 0; }
 #links section { margin: 0 auto; display: block; top: 38.196601125%; position: relative; }
 #links a { 
   color: transparent; 
-  width: 200px; height: 200px;
+  width: 150px; height: 150px;
   margin: 0em 1em;
   border-radius: 20em;
-  background-size:     60%;
-  background-position: center;
+  background-size:     750px;
+  /*background-position: center;*/
   background-repeat:   no-repeat;
 }
-#links a:hover { background-position: 60% 60%; }
-#github   { background-image: url( 'img/github.png'   ); }
-#linkedin { background-image: url( 'img/linkedin.png' ); }
-#careers  { background-image: url( 'img/careers.png'  ); }
+/*#links a:hover { background-position: 60% 60%; }*/
+#links a  { background-image: url( 'img/icons.png' ); }
+#github   { background-position: -610px -115px; } #github:hover   { background-position: -605px -110px; }
+#linkedin { background-position: -110px -240px; } #linkedin:hover { background-position: -105px -235px; }
+#careers  { background-position:   10px -240px; } #careers:hover  { background-position:   15px -235px; }
+#contact  { background-position: -363px -110px; } #contact:hover  { background-position: -358px -105px; }
+#phone    { background-position: -488px -120px; } #phone:hover    { background-position: -483px -115px; }
 
 /* Side Pages */
 #main {
@@ -297,7 +331,7 @@ header h2 ul li:first-child::before { content: ''; margin: 0; }
 #text a:link, #text a:visited, 
 #text a:hover, #text a:active   { color: #f0fcff; transition: all 0.3s; }
 #text a:hover                   { text-decoration: none; transition: all 0.5s; }
-#text section > img             { width: 10%; float: left; height: auto; cursor: pointer; background-color: rgb( 240, 252, 255 ); }
+#text section img               { width: 10%; float: left; height: auto; cursor: pointer; background-color: rgb( 240, 252, 255 ); }
 #text .help                     { color: rgba( 240, 252, 255, 0.5 ); }
 #text iframe                    { margin-top: 1em; }
 #text th                        { text-align: left; vertical-align: top; width: 15em; }
@@ -322,13 +356,25 @@ header h2 ul li:first-child::before { content: ''; margin: 0; }
 #inst { 
   color: rgb( 240, 252, 255 );
   position:  fixed;
-  left: 3em; bottom: 3em;
+  right: 3em; bottom: 3em;
 }
 #boxcontent { 
   position: absolute;
-  background-color: rgb( 240, 252, 255 );
+  /*background-color: rgb( 240, 252, 255 );*/
   top: 0; left: 0; bottom: 0; right: 0;
   margin: auto;
+}
+#boxcontent figure {
+  float:   left;
+  display: block;
+  margin-right: 1em;
+}
+#boxcontent figcaption {
+  float: right;
+  width: 280px;
+}
+#boxcontent p {
+  margin-top: 1em;
 }
 
 /* Crumbs */
@@ -345,7 +391,7 @@ header h2 ul li:first-child::before { content: ''; margin: 0; }
 
 /* LaTeX Styling */
 .latex { font-size: 1em; }
-.latex sub, sup { text-transform: uppercase; }
+.latex sub, .latex sup { text-transform: uppercase; }
 .latex sub {
   vertical-align: -0.5ex;
   margin-left: -0.1667em;
