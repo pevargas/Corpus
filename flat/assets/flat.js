@@ -129,6 +129,7 @@ var vargas = {
     $( 'img' ).each( function( ) {
       var src    = $( this ).attr( 'src' );
       var height, width;
+      src = src.replace( "thumbs", "img" );
 
       $( '<img>' ) // Make in memory copy of image to avoid css issues
         .attr( 'src', src )
@@ -208,9 +209,8 @@ var vargas = {
 
         // Find the index of the currently displayed image on the pages
         for ( var i = 0; i < images.length; ++i ) {
-          if ( images[i].src == current.src ) {
+          if ( images[i].src.split("/").pop() == current.src.split("/").pop() ) {
             index = i;
-            console.debug( i );
             break;
           }
         }
@@ -223,6 +223,18 @@ var vargas = {
         index = ( index + images.length ) % images.length;
         images[ index ].click( );
       }
+    });
+  },
+
+  // Function to preload the images
+  preload: function( ) {
+    var images = $( "article img" );
+    vargas.preHelper( images );
+  },
+
+  preHelper: function( arr ) {
+    $(arr).each( function () {
+      $( '<img/>' )[0].src = this.src.replace( "thumbs", "img" );
     });
   },
 

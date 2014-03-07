@@ -37,40 +37,12 @@ var repo = {
     date: "2010-08",
     text: "Designed flyers for the Gay-Straight Alliance. This flyer was used for the annual Drag Show, which had a jungle theme"
   },
-  "flyer-gsa-drag-show-retro.png":
-  {
-    date: "2010-08",
-    text: "Designed flyers for the Gay-Straight Alliance. This flyer was an alternate design for the annual Drag Show"
-  },
-  "flyer-gsa-queer-sex-ed-01.png":
-  {
-    date: "2010-09",
-    text: "Designed flyers for the Gay-Straight Alliance. This alternate flyer was for the annual Queer Sex Ed event."
-  },
   "flyer-gsa-queer-sex-ed-02.png":
   {
     date: "2010-09",
     text: "Designed flyers for the Gay-Straight Alliance. This alternate flyer was for the annual Queer Sex Ed event."
   },
-  "flyer-gsa-queer-sex-ed-03.png":
-  {
-    date: "2010-09",
-    text: "Designed flyers for the Gay-Straight Alliance. This alternate flyer was for the annual Queer Sex Ed event."
-  },
-  "flyer-gsa-queer-sex-ed-04.png":
-  {
-    date: "2010-09",
-    text: "Designed flyers for the Gay-Straight Alliance. This flyer was used for the annual Queer Sex Ed event."
-  },
-
-  /////////////////////////////////////////////////////////////////////////////
-  // Knitting Man Flyer
-  "flyer-knitting-man.png":
-  {
-    date: "2012-08",
-    text: "Designed flyers for Knitting Man: A Gay Men's Knitting Group. This promotional handbill is used to gain new members"
-  },
-
+  
   /////////////////////////////////////////////////////////////////////////////
   // SAGE Flyer
   "flyer-sage-general-meeting.png":
@@ -82,11 +54,6 @@ var repo = {
   {
     date: "2012-03",
     text: "Designed flyers for the Student Alliance of GLBT Engineers. This flyer was used to for an Interview Workshop for GLBTQ and Ally Students"
-  },
-  "flyer-sage-mass-meeting.png":
-  {
-    date: "2012-02",
-    text: "Designed flyers for the Student Alliance of GLBT Engineers. This flyer was for our introductory meeting for the semester"
   },
   "flyer-sage-resume-workshop.png":
   {
