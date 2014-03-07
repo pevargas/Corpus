@@ -278,8 +278,8 @@ nav h2 a:hover, nav h2 a:active {
   text-decoration:  none;
   transition:       all 0.5s;
 }
-.slide:nth-child(odd) div, .slide:nth-child(odd) a   { left:  10%; float: left; }
-.slide:nth-child(even) div, .slide:nth-child(even) a { right: 10%; float: right; }
+.slide a            { right: 10%; float: right; }
+.slide:last-child a { left:  10%; float: left; }
 
 .slide header {
   width: 80%;
