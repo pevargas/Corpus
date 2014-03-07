@@ -84,14 +84,15 @@
       <article class="content-inner"><!-- extra div for emulating position:fixed of the menu -->
         <section id="home" class="slide" data-speed="8">
           <header>
-            <h1>Patrick E. Vargas</h1>
+            <h1><span class="slabtext">Patrick E</span><span class="slabtext">Vargas</span></h1>
             <h2>
-              <ul>
+              <span class="slabtext">UI/UX Designer &amp; Software Engineer &amp; Full Stack Developer</span>
+<!--               <ul>
                 <li>UI/UX Designer</li>
                 <li>Software Engineer</li>
                 <li>Full Stack Developer</li>
               </ul>
-            </h2>
+  -->           </h2>
           </header>
         </section>
         
@@ -104,21 +105,21 @@
 
         <section id="projects" class="slide" data-speed="8">
           <a href="code">
-            <h2>Programming Projects</h2>
+            <h2>Code</h2>
             <p>What have I programmed? With a Bachelors of Science in Computer Science and an emphasis in Software Engineering, I have programmed many applications.</p>
           </a>
         </section>
         
         <section id="design" class="slide" data-speed="8">
           <a href="design">
-            <h2>Design Work</h2>
+            <h2>Design</h2>
             <p>What can I design? One of my two minors is Technology, Arts and Media (TAM). Armed with the skills taught from the TAM program, I am slowly fine tuning my skills.</p>
           </a>
         </section>
 
         <section id="music" class="slide" data-speed="8">
           <a href="music">
-            <h2>Music Portfolio</h2>
+            <h2>Music</h2>
             <p>What have I composed? Staring my college career as a music composition major in the College of Music helped form the type of person I am today.</p>
           </a>
         </section>
@@ -145,12 +146,14 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 
 <script src="assets/flat.js"></script>
+<script src="assets/jquery.slabtext.min.js"></script>
 
 <script>
 $(function( ) {
   vargas.SidebarMenuEffects( );
   vargas.parallax( true );
   vargas.index( );
+  $( "h1, h2" ).slabText();
 });
 </script>
 

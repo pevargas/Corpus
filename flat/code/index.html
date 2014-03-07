@@ -58,7 +58,7 @@
       <article class="content-inner" id="main"><!-- extra div for emulating position:fixed of the menu -->
         <div id="text">
           <header>
-            <h1>Programming Projects</h1>
+            <h1>Code</h1>
           </header>
 
           <section>
@@ -195,7 +195,7 @@
 <!-- jQuery Library provided by Google -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-
+<script src="../assets/jquery.slabtext.min.js"></script>
 <script src="../assets/flat.js"></script>
 <script src="../assets/repo.js"></script>
 
@@ -204,6 +204,7 @@ $(function( ) {
   vargas.SidebarMenuEffects( );
   vargas.lightbox( );
   vargas.key( );
+  $( "h1" ).slabText();
 });
 </script>
 </body>

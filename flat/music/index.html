@@ -11,6 +11,7 @@
 <style>
 #main { background-image: url( '../assets/img/vargas-montreal-graffiti.jpg' ); }
 img { width: 20%; }
+h2 { margin-top: 1em; }
 </style>
 
 <!-- Google Analytics -->
@@ -59,7 +60,7 @@ img { width: 20%; }
       <article class="content-inner" id="main"><!-- extra div for emulating position:fixed of the menu -->
         <div id="text">
           <header>
-            <h1>Music Portfolio</h1>
+            <h1>Music</h1>
           </header>
 
           <section>
@@ -98,11 +99,12 @@ img { width: 20%; }
 <!-- jQuery Library provided by Google -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-
+<script src="../assets/jquery.slabtext.min.js"></script>
 <script src="../assets/flat.js"></script>
 <script>
 $(function( ) {
   vargas.SidebarMenuEffects( );
+  $( "h1" ).slabText();
 });
 </script>
 </body>

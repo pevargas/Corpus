@@ -30,7 +30,7 @@ body {
 html, body, .container, .pusher, .content { height: 100%; }
 h1, h2, h3, h4 { text-transform: uppercase; clear: both; }
 h1             { font-size: 20pt; }
-h2             { font-size: 15pt; margin-top: 1em; }
+h2             { font-size: 15pt;  }
 h2:first-child { margin-top: 0; }
 a:link, a:visited, a:hover, a:active { color: #f0fcff; text-decoration: none; }
 blockquote {
@@ -273,7 +273,7 @@ nav h2 a:hover, nav h2 a:active {
   margin: 0 auto;
   top: 25%;
 }
-.slide header h1                    { font-size: 75pt; }
+/*.slide header h1                    { font-size: 75pt; }*/
 header h2                           { font-size: 19.9pt; }
 header h2 ul                        { list-style: none; }
 header h2 ul li                     { display: inline; }
@@ -404,3 +404,6 @@ header h2 ul li:first-child::before { content: ''; margin: 0; }
   margin-left: -0.36em;
   margin-right: -0.15em;
 }
+
+/* Slab Text Style */
+.slabtexted .slabtext{display:-moz-inline-box;display:inline-block;white-space:nowrap}.slabtextinactive .slabtext{display:inline;white-space:normal;font-size:1em !important;letter-spacing:inherit !important;word-spacing:inherit !important;*letter-spacing:0 !important;*word-spacing:0 !important;}.slabtextdone .slabtext{display:block;line-height:0.9;}
