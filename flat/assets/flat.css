@@ -124,6 +124,7 @@ blockquote cite:before {
 }
 
 /* Drawer */
+#drawer h1      { padding: 0.5em; }
 #drawer menu    { list-style: none; }
 #drawer menu li { position: relative; margin: 0em 0em; }
 #drawer menu a, #text section img, #links a:hover {
@@ -147,8 +148,9 @@ blockquote cite:before {
 #drawer .ipvlogo {
   width: 120px; height: 120px;
   display:      block;
-  margin:       1em center;
-  background-size: 100%;
+  margin:       1em auto;
+  background-size: 720px;
+  background-position: -240px -120px;
 }
 
 /* Navigation */
@@ -255,6 +257,17 @@ nav h2 a:hover, nav h2 a:active {
   box-shadow: 0 0 50px rgba( 0, 0, 0, 0.9 );
 }
 
+.slide figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: #00A5C9;
+  color: #FFFFFF;
+  padding: 0.5em;
+}
+.slide section figcaption {
+  bottom: -600px;
+}
+
 .slide div, .slide header, .slide a {
   background-color: rgba( 0, 165, 201, 0.9 );
   display:          block;
@@ -271,7 +284,7 @@ nav h2 a:hover, nav h2 a:active {
 .slide header {
   width: 80%;
   margin: 0 auto;
-  top: 25%;
+  top: 15%;
 }
 /*.slide header h1                    { font-size: 75pt; }*/
 header h2                           { font-size: 19.9pt; }

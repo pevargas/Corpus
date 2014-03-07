@@ -60,6 +60,17 @@ var vargas = {
 
     $( '.slide' ).each( function ( position ) {
       var $slide = $( this );
+      
+      console.debug( $slide[0].childNodes );
+      var caption = null;
+      for ( var i = 0; i < $slide[0].childNodes.length; ++i ) {
+        if ( $slide[0].childNodes[i].localName == "figcaption" ) {
+          caption = $slide[0].childNodes[i];
+          break;
+        }
+      }
+      console.debug( caption );
+
       $slide.data( 'postop', position*1000 );
 
       $content.scroll( function( ) {
@@ -67,6 +78,11 @@ var vargas = {
         var yPos = -( $content.scrollTop( ) / $slide.data( 'speed' ) ) + 0.125*position*1000 - 50;
         var coords = '50% ' + yPos + 'px';
         $slide.css({ 'background-position': coords });
+
+        if ( caption ) {
+          $( caption ).css({ 'bottom': -yPos*4 - 500 });
+          console.debug( yPos );
+        }
 
         if ( index ) {
           $( "#navbar menu li ").removeClass( 'on' );
