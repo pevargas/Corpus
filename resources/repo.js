@@ -224,7 +224,7 @@ var repo = {
   },
 
   /////////////////////////////////////////////////////////////////////////////
-  // Macbeath PRogram
+  // Macbeth Program
   "school-macbeth-cover.png":
   {
     date: "2012-07",
@@ -379,6 +379,20 @@ var repo = {
   {
     date: "2010-05",
     text: "First version of portfolio website."
+  },
+
+  /////////////////////////////////////////////////////////////////////////////
+  // ATLS Courses
+  "dm1-sequential-images.png":
+  {
+    date: "2013-02",
+    text: "In my Digital Media One course, we learned photoshop. This project, \"Sequential Images\", we had to compose a pair of images using at least one image found online, one scanned image and one image we took ourselves."
+  },
+  "fodd-unconventional-typeface.jpg":
+  {
+    date: "2014-02",
+    text: "Our task was to pick a word and depict it using an physical, unconventional typeface. I chose \"Moxie\", since you've gotta have moxie in order to win at cards!"
   }
+
 
 };

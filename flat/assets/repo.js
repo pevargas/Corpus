@@ -188,6 +188,19 @@ var repo = {
     link: "http://redwood.colorado.edu/vargasp/dm2/proj3/",
     title: "Acrylic Video",
     text: "For the final project I chose to do some video manipulation. I really like the look acrylic makes when stacked on top of each other, creating another image. Video clips from BBC Motion Gallery.<br><br>I interlaced video clips with stock footage to make a mosaic of interesting images. The main reason for this program was to explore video manipulation. I really enjoyed the bit mashing of the different images and found some really interesting techniques along the way. "
+  },
+
+  /////////////////////////////////////////////////////////////////////////////
+  // ATLS Courses
+  "dm1-sequential-images.png":
+  {
+    date: "2013-02",
+    text: "In my Digital Media One course, we learned Photoshop. This project, \"Sequential Images\", we had to compose a pair of images using at least one image found online, one scanned image and one image we took ourselves."
+  },
+  "fodd-unconventional-typeface.jpg":
+  {
+    date: "2014-02",
+    text: "Our task was to pick a word and depict it using an physical, unconventional typeface. I chose \"Moxie\", since you've gotta have moxie in order to win at cards!"
   }
 
 };
