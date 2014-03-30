@@ -1,0 +1,9 @@
+ErrorDocument 404 /
+Redirect 301 resume.htm    /resume
+Redirect 301 catalog.xml   /resume
+Redirect 301 portfolio.htm /
+Redirect 301 music.htm     /music
+Redirect 301 design.xml    /design
+Redirect 301 projects.htm  /code
+Redirect 301 thanks.htm    /
+Redirect 301 index.htm     /
