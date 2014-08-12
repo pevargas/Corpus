@@ -132,7 +132,7 @@ var repo = {
   {
     date: "2014-01",
     title: "PB GeoStan<br>&sect; Drop Pins",
-    text: "Created a grails application to showcase Pitney Bowes' geocoder, GeoStan.<br><br>This grails application has support for droping pins on the map. The user then can click any of the markers to run a reverse geocoder run."
+    text: "Created a grails application to showcase Pitney Bowes' geocoder, GeoStan.<br><br>This grails application has support for dropping pins on the map. The user then can click any of the markers to run a reverse geocoder run."
   },
 
   /////////////////////////////////////////////////////////////////////////////
