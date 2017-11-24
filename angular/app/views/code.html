@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Code</h2>
+  <p>Here are various software-centric projects.</p>
+  <div ng-controller="ThumbnailCtrl" ng-init="init('code')" class="row">
+    <div class="col-md-2" ng-repeat="thumb in thumbs">
+      <a ng-href="#/{{source}}/{{thumb.title}}">
+        <img ng-src="{{thumb.image}}" class="thumbnail"/>
+      </a>
+    </div>
+  </div>
+</div>

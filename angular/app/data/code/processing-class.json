@@ -1,0 +1,20 @@
+{
+  "title":"CU Class: Digital Media 2",
+  "date":"2013-12",
+  "description": "This class entailed learning the Processing IDE and language. Based on Java, this language encapsulates the nitty-gritty of the Java programming language, allowing for fast and easy programming of graphical applications.",
+  "tags": ["processing", "java"],
+  "parts": [
+    {
+      "title":"Conceptual Self Portrait",
+      "image":"/images/code/processing-portrait.gif",
+      "description":"Developed an interactive, conceptual self-portrait.",
+      "link":"http://redwood.colorado.edu/vargasp/dm2/lab1/"
+    },
+    {
+      "title":"Generative Art",
+      "image":"/images/code/processing-generative-art.gif",
+      "description":"This generative art project uses characters the user types and represents them as a square and color.",
+      "link":"http://redwood.colorado.edu/vargasp/dm2/proj1/"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title":"Intern Work: Pitney Bowes GeoStan Website",
+  "date":"2014-01",
+  "description": "Implemented a GUI in the form of a Grails Application for Pitney Bowes' geocoder, GeoStan. Utilized the Google-Maps API to display GeoStan output along side Google output.",
+  "tags": ["grails", "illustrator", "groovy", "java", "ajax", "google-maps"],
+  "parts": [
+    {
+      "title":"Homepage",
+      "image":"/images/code/grails-geostan-01-home.png",
+      "description":"Here we see the homepage. Users can search for an address or point using the search bar."
+    },
+    {
+      "title":"Interpretation",
+      "image":"/images/code/grails-geostan-02-hampton.png",
+      "description":"This location shows the results between Pitney Bowes' geocoder and Google's geocoder. Which result do you think is more correct based on what the user put in?"
+    },
+    {
+      "title":"Reverse Geocoding",
+      "image":"/images/code/grails-geostan-03-reverse.png",
+      "description":"The grails application has support for reverse geocoding. This means you can search for a latitude and longitude point and the geocoders will try an find the closest address."
+    },
+    {
+      "title":"Infoboxes",
+      "image":"/images/code/grails-geostan-04-infobox.png",
+      "description":"If a user hovers over any of the points, they can see the result in an info-box."
+    },
+    {
+      "title":"Intersections",
+      "image":"/images/code/grails-geostan-05-intersection.png",
+      "description":"There is support for intersections. Here, GeoStan found two possible matches for the user input while Google picked a result for the user. Which result do you think is more correct?"
+    },
+    {
+      "title":"Multimatch",
+      "image":"/images/code/grails-geostan-06-multimatch.png",
+      "description":"Here is a multi-match result. GeoStan found three possible results while Google picked one for the user. Which result do you think is more correct based on what the user put in?"
+    },
+    {
+      "title":"Drop Pins",
+      "image":"/images/code/grails-geostan-07-drop-pins.png",
+      "description":"This grails application has support for dropping pins on the map. The user then can click any of the markers to run a reverse geocoder run."
+    }
+  ]
+}

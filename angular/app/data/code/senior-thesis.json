@@ -1,0 +1,23 @@
+{
+  "title":"Technology, Arts and Media Senior Thesis Project",
+  "date":"2014-05",
+  "description": "Created node.js application to study the use of Queer jargon. Utilized APIs, such as UrbanDictionary, Tumblr, and Flickr, to compare and contrast word definitions with image usages.",
+  "tags": ["node.js", "express.js", "mongodb", "less", "jade", "javascript"],
+  "parts": [
+    {
+      "title":"Homepage",
+      "image":"/images/code/queertionary-homepage.png",
+      "description":"Basic homepage features a new word to explore, an explanation of the site and a disclaimer."
+    },
+    {
+      "title":"Browse",
+      "image":"/images/code/queertionary-browse.png",
+      "description":"To explore what's available, a browse page is available."
+    },
+    {
+      "title":"Definition",
+      "image":"/images/code/queertionary-definition.png",
+      "description":"This page features the definition of a word surrounded by example images tagged with the word."
+    }
+  ]
+}

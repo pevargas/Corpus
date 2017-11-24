@@ -1,0 +1,15 @@
+<div class="modal-header" ng-if="data.title || data.date">
+    <button type="button" ng-click="close()" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+    <h3 class="modal-title" ng-if="data.title">{{data.title}}</h3>
+    <span ng-if="data.date">{{data.date}}</span>
+</div>
+<div class="modal-body row">
+  <figure>
+    <img ng-src="{{data.image}}" alt="{{data.title}}" class="col-md-12"/>
+
+  </figure>
+</div>
+<div class="modal-footer" ng-if="data.description || data.caption">
+  <figcaption ng-if="data.caption" class="col-md-12 text-muted">{{data.caption}}</figcaption>
+  <p class="text-left">{{data.description}}</p>
+</div>

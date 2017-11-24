@@ -1,0 +1,31 @@
+<div class="container">
+  <h2 class="capitalize"><a ng-href="/#/{{category}}">{{category}}</a> <small ng-if="data.title">{{data.title}}</small></h2>
+  <div class="row">
+    <div class="col-md-3">
+      <span ng-if="data.date">{{data.date}}</span>
+      <p ng-if="data.description" class="text-left">{{data.description}}</p>
+
+      <p ng-if="data.tags">
+        <span ng-repeat="tag in data.tags" class="badge language-tags">{{tag}}</span>
+      </p>
+    </div>
+    <div class="col-md-9">
+      <figure ng-if="!data.parts">
+        <img ng-src="{{data.image}}" alt="{{data.title}}" style="width:100%;"/>
+        <figcaption ng-if="data.caption" class="text-muted caption" align="right">{{data.caption}}</figcaption>
+      </figure>
+
+      <div ng-if="data.parts" ng-controller="CarouselCtrl">
+        <uib-carousel interval="5000" no-wrap="false" style="height:100%;">
+          <uib-slide ng-repeat="part in data.parts" active="slide.active">
+            <img ng-src="{{part.image}}" alt="{{part.title||data.title}}" style="margin:0px;width:100%;" />
+            <!-- <div ng-if="part.description" class="carousel-caption slide-background hover-hide"> -->
+            <div ng-if="part.description" class="carousel-caption-details">
+              <p>{{part.description}}</p>
+            </div>
+          </uib-slide>
+        </uib-carousel>
+      </div>
+    </div>
+  </div>
+</div>

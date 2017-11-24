@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Design</h2>
+  <p>Examples of my design work for various organizations.</p>
+
+  <div ng-controller="ThumbnailCtrl" ng-init="init('design')" class="row">
+    <div class="col-md-2" ng-repeat="thumb in thumbs">
+      <a ng-href="#/{{source}}/{{thumb.title}}">
+        <img ng-src="{{thumb.image}}" class="thumbnail"/>
+      </a>
+    </div>
+  </div>
+</div>

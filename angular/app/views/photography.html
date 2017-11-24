@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Photography</h2>
+  <p>I'm an amateur shutterbug when it comes to photography. Recently, I learned how to use Adobe's Lightroom to enhance a few photos.</p>
+
+  <div ng-controller="ThumbnailCtrl" ng-init="init('photography')" class="row">
+    <div class="col-md-2" ng-repeat="thumb in thumbs">
+      <a ng-href="#/{{source}}/{{thumb.title}}">
+        <img ng-src="{{thumb.image}}" class="thumbnail"/>
+      </a>
+    </div>
+  </div>
+</div>

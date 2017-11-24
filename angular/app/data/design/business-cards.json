@@ -1,0 +1,23 @@
+{
+  "title":"Business Cards",
+  "date":"2013-04",
+  "description": "Designed business cards in Inkscape. These are the backs of the cards.",
+  "parts": [
+    {
+      "title":"Business Card with Zig Ziglar Quote",
+      "image":"/images/design/business-cards-zig-ziglar.jpg"
+    },
+    {
+      "title":"Business Card with Anonymous Quote",
+      "image":"/images/design/business-cards-anonymous.jpg"
+    },
+    {
+      "title":"Business Card with Lucille Ball Quote",
+      "image":"/images/design/business-cards-lucille-ball.jpg"
+    },
+    {
+      "title":"Business Card with Oscar Wilde Quote",
+      "image":"/images/design/business-cards-oscar-wilde.jpg"
+    }
+  ]
+}

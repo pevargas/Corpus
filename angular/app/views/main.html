@@ -1,0 +1,54 @@
+<div ng-controller="CarouselCtrl">
+  <uib-carousel interval="5000" no-wrap="false" class="carousel">
+    <uib-slide ng-repeat="slide in slides" active="slide.active" class="slide" background-src="{{slide.image}}">
+      <div class="carousel-caption hero-text">
+        <p>{{slide.description}}</p>
+        <a class="btn btn-lg btn-primary" ng-href="{{slide.link}}">{{slide.linkText}} <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></a>
+      </div>
+    </uib-slide>
+  </uib-carousel>
+</div>
+
+<div class="marketing">
+  <section id="stack">
+    <div class="container">
+      <div class="col-md-8">
+        <p><span class="lead">Full-Stack Developer</span><br/>Currently, I am in a Software Engineering role which offers much flexibility in the variety of projects I work on. I find I am most happy and productive working in Full-Stack Development.</p>
+      </div>
+      <div class="col-md-4"><img ng-src="/images/splash/instagram-vargas-stack-of-books.jpg"/></div>
+    </div>
+  </section>
+  <section class="gaussed" style="background-image: url('/images/splash/instagram-vargas-golden-gate-gaussed.jpg')">
+    <div class="container">
+      <div class="col-md-4"><img ng-src="/images/splash/instagram-vargas-golden-gate.jpg"/></div>
+      <div class="col-md-8">
+        <p><span class="lead">San Francisco, California</span><br/>Being born and raised in Colorful Colorado has helped shape the person I am today. I am excited for new experiences so I am actively pursuing a career in San Francisco, California.</p>
+      </div>
+    </div>
+  </section>
+  <section id="group">
+    <div class="container">
+      <div class="col-md-8">
+        <p><span class="lead">Teamwork Makes the Dream Work</span><br/>As an extrovert, I am most energized working as part of a team. Agile development is right up my alley as it's the entire team's responsibility to release working software.</p>
+      </div>
+      <div class="col-md-4"><img ng-src="/images/splash/instagram-vargas-group-sculpture.jpg"/></div>
+    </div>
+  </section>
+  <section class="gaussed" style="background-image: url('/images/splash/instagram-vargas-think-globally-gaussed.jpg')">
+    <div class="container">
+      <div class="col-md-4"><img ng-src="/images/splash/instagram-vargas-think-globally.jpg"/></div>
+      <div class="col-md-8">
+        <p><span class="lead">Think Globally, Act Locally</span><br/>I'm interested in working for a company on a product who's main focus is helping people through technology.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="col-md-8">
+        <p>If you know of any <strong>Full-Stack Development</strong> careers in the <strong>San Francisco Bay Area</strong>, where I can work as <strong>part of a team</strong> to <strong>help people through technology</strong>, please drop me a line!</p>
+        <p><a ng-href="/#/contact" class="btn btn-lg btn-primary">Contact Me <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></a></p>
+      </div>
+      <div class="col-md-4"><img ng-src="/images/splash/instagram-vargas-railroad.jpg"/></div>
+    </div>
+  </section>
+</div>

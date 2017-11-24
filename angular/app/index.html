@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="northAmericanNinjaApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#/">
+              <i class="icon-vargas-logo brand-logo" aria-hidden="true"></i>
+              Patrick E. Vargas
+            </a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse" ng-controller="NavbarCtrl">
+
+            <menu class="nav navbar-nav">
+              <li ng-class="{active: isActive('/code') }">
+                <a ng-href="#/code">
+                  <i class="icon-console" aria-hidden="true"></i>
+                  <span class="sr-only">Code</span>
+                </a>
+              </li>
+              <li ng-class="{active: isActive('/design') }">
+                <a ng-href="#/design">
+                  <i class="icon-graph" aria-hidden="true"></i>
+                  <span class="sr-only">Design</span>
+                </a>
+              </li>
+              <li ng-class="{active: isActive('/about') }">
+                <a ng-href="#/about">
+                  <i class="icon-user" aria-hidden="true"></i>
+                  <span class="sr-only">About</span>
+                </a>
+              </li>
+              <li ng-class="{active: isActive('/resume') }">
+                <a ng-href="#/resume">
+                  <i class="icon-document" aria-hidden="true"></i>
+                  <span class="sr-only">Resume</span>
+                </a>
+              </li>
+              <li ng-class="{active: isActive('/photography') }">
+                <a ng-href="#/photography">
+                  <i class="icon-camera"></i>
+                  <span class="sr-only">Photography</span>
+                </a>
+              </li>
+              <li ng-class="{active: isActive('/music') }">
+                <a ng-href="#/music">
+                  <i class="icon-record" aria-hidden="true"></i>
+                  <span class="sr-only">Music</span>
+                </a>
+              </li>
+            </menu>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div ng-view=""></div>
+
+    <div class="footer">
+      <div class="navbar navbar-default navbar-static-bottom">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li class="navbar-text">
+              &copy; <script>document.write(new Date().getFullYear())</script><i class="icon-vargas-logo" aria-hidden="true"></i>Patrick E. Vargas
+            </li>
+            <li>
+              <a href="http://www.google.com/recaptcha/mailhide/d?k=01cYPU12wBMWbyyGvXLYIo5w==&c=nOp_Iu2kNxiVZAmxNcjrMCk52NW4vkxEJ6MWyxJxy5U=" title="Email Me" rel="nofollow">
+                <i class="icon-email" aria-hidden="true"></i>
+                <span class="sr-only">Email</a>
+              </a>
+            </li>
+            <li>
+              <a href="tel:720-515-6402" title="Call Me" rel="nofollow">
+                <i class="icon-phone" aria-hidden="true"></i>
+                <span class="sr-only">Phone</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/patrickvargas" title="LinkedIn" rel="nofollow">
+                <i class="icon-linked" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://careers.stackoverflow.com/vargasp" title="StackOverflow Careers" rel="nofollow">
+                <i class="icon-stack" aria-hidden="true"></i>
+                <span class="sr-only">StackOverflow Careers</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://github.com/pevargas" title="GitHub Profile" rel="nofollow">
+                <i class="icon-git" aria-hidden="true"></i>
+                <span class="sr-only">GitHub Profile</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-28491088-4');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/Processing.js/processing.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/code.js"></script>
+        <script src="scripts/controllers/resume.js"></script>
+        <script src="scripts/controllers/design.js"></script>
+        <script src="scripts/controllers/photography.js"></script>
+        <script src="scripts/controllers/music.js"></script>
+        <script src="scripts/controllers/modalinstance.js"></script>
+        <script src="scripts/controllers/navbar.js"></script>
+        <script src="scripts/controllers/modal.js"></script>
+        <script src="scripts/controllers/carousel.js"></script>
+        <script src="scripts/controllers/thumbnail.js"></script>
+        <script src="scripts/controllers/project.js"></script>
+        <script src="scripts/directives/backgroundsrc.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
