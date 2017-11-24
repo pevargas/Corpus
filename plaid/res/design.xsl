@@ -16,18 +16,18 @@
 <meta name="copyright" content="&#169;2012 Patrick E. Vargas" />
 <meta name="reply-to" content="patrick.vargas@colorado.edu" />
 
-<link rel="shortcut icon" href="res/images/favicon.ico" />
-<link rel="icon" type="image/gif" href="res/images/animated_favicon1.gif" />
-<link rel="stylesheet" type="text/css" href="res/StyleGuide.css" />
-<link rel="stylesheet" type="text/css" href="res/grid.css" />
-<link rel="stylesheet" type="text/css" href="res/animation.css" />
-<link rel="stylesheet" type="text/css" href="res/design_sprites.css"/>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="icon" type="image/gif" href="images/animated_favicon1.gif" />
+<link rel="stylesheet" type="text/css" href="grid.css" />
+<link rel="stylesheet" type="text/css" href="StyleGuide.css" />
+<link rel="stylesheet" type="text/css" href="animation.css" />
+<link rel="stylesheet" type="text/css" href="design_sprites.css"/>
 
 <!--[if IE]>  
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->  
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="res/script.js"></script>
+<script type="text/javascript" src="script.js"></script>
 
 <script type="text/javascript">
 $(function() {

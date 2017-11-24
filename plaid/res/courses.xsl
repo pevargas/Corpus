@@ -7,12 +7,12 @@
 <head>
 
 <link rel="shortcut icon" href="res/images/favicon.ico" />
-<link rel="icon" type="image/gif" href="res/images/animated_favicon1.gif" />
-<link rel="stylesheet" type="text/css" href="res/StyleGuide.css" />
-<link rel="stylesheet" type="text/css" href="res/grid.css" />
-<link rel="stylesheet" type="text/css" href="res/animation.css" />
+<link rel="icon" type="image/gif" href="images/animated_favicon1.gif" />
+<link rel="stylesheet" type="text/css" href="StyleGuide.css" />
+<link rel="stylesheet" type="text/css" href="grid.css" />
+<link rel="stylesheet" type="text/css" href="animation.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"/>
-<script type="text/javascript" src="res/script.js"></script>
+<script type="text/javascript" src="script.js"></script>
 
 <title>Patrick E. Vargas | Courses Taken</title>
 
