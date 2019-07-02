@@ -1,4 +1,3 @@
-Corpus
-======
+# History
 
-Repository for my online pressence
+Repository of my online portfolio
